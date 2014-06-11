@@ -1,0 +1,9 @@
+D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.exe.config
+D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.exe
+D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.pdb
+D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csprojResolveAssemblyReference.cache
+D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Properties.Resources.resources
+D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csproj.GenerateResource.Cache
+D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.exe
+D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.pdb
+D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.index.resources
