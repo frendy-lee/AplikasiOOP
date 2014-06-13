@@ -7,4 +7,4 @@ D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Apl
 D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.exe
 D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.pdb
 D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.index.resources
-C:\Users\Steven Handoko\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.exe.config
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.exe.config
