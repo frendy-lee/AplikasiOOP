@@ -16,5 +16,10 @@ namespace Aplikasi_Transaksi_Penjualan
         {
             InitializeComponent();
         }
+
+        private void Tambah_Makanan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
