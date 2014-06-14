@@ -129,6 +129,7 @@
             this.Name = "registUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "registUser";
+            this.Load += new System.EventHandler(this.registUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

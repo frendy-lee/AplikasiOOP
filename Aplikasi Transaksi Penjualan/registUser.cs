@@ -85,5 +85,10 @@ namespace Aplikasi_Transaksi_Penjualan
         {
             this.Close();
         }
+
+        private void registUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
