@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Aplikasi_Transaksi_Penjualan
 {
-    public partial class Tambah_Makanan : Form
+    public partial class Form2 : Form
     {
-        public Tambah_Makanan()
+        public Form2()
         {
             InitializeComponent();
         }

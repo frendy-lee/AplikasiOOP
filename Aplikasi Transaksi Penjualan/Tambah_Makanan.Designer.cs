@@ -200,6 +200,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Tambah_Makanan";
             this.Text = "Tambah_Makanan";
+            this.Load += new System.EventHandler(this.Tambah_Makanan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
