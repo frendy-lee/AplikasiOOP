@@ -8,12 +8,34 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Collections;
 
 namespace Aplikasi_Transaksi_Penjualan
 {
     public partial class FrTransaksi : Form
     {
-        OleDbConnection database;
+        public class menu_selected
+        {
+            public string kode {private set; get; }
+            public string nama { private set; get; }
+            public int harga { private set; get; }
+            public int jumlah { private set; get; }
+            public int stotal { private set; get; }
+
+            public menu_selected(string kode, string nama, int harga, int jumlah)
+            {
+                this.kode = kode;
+                this.nama = nama;
+                this.harga = harga;
+                this.jumlah = jumlah;
+                this.stotal = harga * jumlah;
+            }
+
+            public void update_menu(int jumlah){
+                this.jumlah = jumlah;
+                this.stotal = harga * jumlah;
+            }
+        }
 
         public class Mnu
         {
@@ -22,8 +44,13 @@ namespace Aplikasi_Transaksi_Penjualan
             public int harga { set; get; }
         }
 
+        OleDbConnection database;
+        ArrayList slect;
+        DataGridViewButtonColumn bdelete;
+        int subtotal, total, pajak, bayar, kembali;
+
         public FrTransaksi()
-        {
+        {            
             InitializeComponent();
             //initiate DB connection
             string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=../../Dbase/TP.mdb";
@@ -37,6 +64,8 @@ namespace Aplikasi_Transaksi_Penjualan
                 Console.WriteLine(ex.Message);
                 return;
             }
+
+            slect = new ArrayList();
         }
 
         public void loadComboBox()
@@ -51,21 +80,55 @@ namespace Aplikasi_Transaksi_Penjualan
             foreach (DataRow row in data.Rows)
             {
                 Array.Resize(ref option, option.Length + 1);
-                option[option.GetUpperBound(0)] = row[0].ToString() + " - " + row[1].ToString();
+                option[option.GetUpperBound(0)] = row[0].ToString() + "-" + row[1].ToString();
             }
 
             selectmenu.DataSource = option;
         }
 
-        public void loadDataGrid()
+        public void loadDataGrid(ArrayList slect)
         {
-            //Mnu[] arrStudents = new Mnu[1];
-            //arrStudents[0] = new Mnu();
-            //arrStudents[0].Age = 8;
-            //arrStudents[0].GPA = 3.5;
-            //arrStudents[0].Name = "Bob";
+            subtotal = pajak = total = bayar = kembali = 0;
+            if (slect.Count == 0)
+            {
+                dataGridView1.DataSource = null;
+                dataGridView1.Columns.Clear();                
+            }
+            else
+            {                
+                dataGridView1.DataSource = null;
+                dataGridView1.Columns.Clear();
 
-            //dataGridView1.DataSource = arrStudents;
+                dataGridView1.DataSource = slect;
+                dataGridView1.AllowUserToAddRows = false;
+                dataGridView1.ReadOnly = true;
+
+                dataGridView1.Columns[0].Width = 100;
+                dataGridView1.Columns[1].Width = 200;
+                dataGridView1.Columns[2].Width = 100;
+                dataGridView1.Columns[3].Width = 100;
+                dataGridView1.Columns[4].Width = 100;
+
+                bdelete = new DataGridViewButtonColumn();
+                bdelete.Name = "delete";
+                bdelete.HeaderText = "Delete";
+                bdelete.Text = "Delete";
+                bdelete.FlatStyle = FlatStyle.Flat;                
+                bdelete.UseColumnTextForButtonValue = true;
+                bdelete.Width = 50;
+                dataGridView1.Columns.Add(bdelete);
+
+                foreach (menu_selected i in slect)
+                    subtotal += i.stotal;
+
+                pajak = (int)(subtotal * 0.1f);
+                total = subtotal + pajak;                
+            }
+            txtstotal.Text = subtotal.ToString();
+            txtpajak.Text = pajak.ToString();
+            txttotal.Text = total.ToString();
+            txtbayar.Text = bayar.ToString();
+            txtkembali.Text = kembali.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -100,7 +163,82 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void buka_Click(object sender, EventArgs e)
         {
-            loadDataGrid();
+            string selected = selectmenu.Text;
+            string[] menu_split = (selected).Split('-');
+            int jumlah = Convert.ToInt32(jumlahUpDown.Value);            
+            OleDbCommand SQLQuery = new OleDbCommand();
+            DataTable data = new DataTable();
+            SQLQuery.CommandText = "SELECT kode_menu,nama_menu,harga FROM tb_menu";
+            SQLQuery.Connection = database;
+            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(SQLQuery);
+            dataAdapter.Fill(data);
+            bool exist = false;
+            foreach (menu_selected i in slect)
+            {
+                if (i.kode == menu_split[0])
+                {
+                    exist = true;
+                    MessageBox.Show("Data sudah pernah dimasukkan, jumlah akan diupdate");
+                    foreach (DataRow row in data.Rows)
+                    {
+                        if (row[0].ToString() == menu_split[0])
+                        {
+                            i.update_menu(jumlah);
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
+            if (exist == false)
+            {
+                foreach (DataRow row in data.Rows)
+                {
+                    if (row[0].ToString() == menu_split[0])
+                    {
+                        slect.Add(new menu_selected(menu_split[0], menu_split[1], int.Parse(row["harga"].ToString()), jumlah));
+                        break;
+                    }
+                }
+            }
+
+            loadDataGrid(slect);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {            
+            int currentRow = int.Parse(e.RowIndex.ToString());            
+            if (dataGridView1.Columns[e.ColumnIndex] == bdelete && currentRow >= 0)
+            {                
+                slect.RemoveAt(currentRow);                               
+            }
+
+            loadDataGrid(slect);
+        }
+
+        private void txtbayar_Enter(object sender, EventArgs e)
+        {
+            if (int.Parse(txtbayar.Text) < total)
+            {
+                MessageBox.Show("Pembayaran lebih kecil dari Total");
+                txtbayar.Focus();
+                bayar = 0;
+                kembali = 0;
+            }
+            else
+            {
+                bayar = int.Parse(txtbayar.Text);
+                kembali = bayar - total;
+            }
+
+            txtbayar.Text = bayar.ToString();
+            txtkembali.Text = kembali.ToString();
+
+        }
+
+        private void Simpan_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
