@@ -37,17 +37,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.kode_member = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tambah = new System.Windows.Forms.Button();
-            this.selectmenu = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.jumlahUpDown = new System.Windows.Forms.NumericUpDown();
             this.kode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jumlah = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.delete = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tambah = new System.Windows.Forms.Button();
+            this.selectmenu = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.jumlahUpDown = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.txtstotal = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -161,6 +161,44 @@
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // kode
+            // 
+            this.kode.HeaderText = "Kode Menu";
+            this.kode.Name = "kode";
+            this.kode.ReadOnly = true;
+            // 
+            // nama
+            // 
+            this.nama.HeaderText = "Nama";
+            this.nama.Name = "nama";
+            this.nama.ReadOnly = true;
+            this.nama.Width = 200;
+            // 
+            // harga
+            // 
+            this.harga.HeaderText = "Harga";
+            this.harga.Name = "harga";
+            this.harga.ReadOnly = true;
+            // 
+            // jumlah
+            // 
+            this.jumlah.HeaderText = "Jumlah";
+            this.jumlah.Name = "jumlah";
+            this.jumlah.ReadOnly = true;
+            // 
+            // stotal
+            // 
+            this.stotal.HeaderText = "Sub total";
+            this.stotal.Name = "stotal";
+            this.stotal.ReadOnly = true;
+            // 
+            // delete
+            // 
+            this.delete.HeaderText = "Delete";
+            this.delete.Name = "delete";
+            this.delete.ReadOnly = true;
+            this.delete.Width = 50;
+            // 
             // tambah
             // 
             this.tambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -183,6 +221,7 @@
             this.selectmenu.Name = "selectmenu";
             this.selectmenu.Size = new System.Drawing.Size(121, 21);
             this.selectmenu.TabIndex = 10;
+            this.selectmenu.SelectedIndexChanged += new System.EventHandler(this.selectmenu_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -225,44 +264,6 @@
             0,
             0,
             0});
-            // 
-            // kode
-            // 
-            this.kode.HeaderText = "Kode Menu";
-            this.kode.Name = "kode";
-            this.kode.ReadOnly = true;
-            // 
-            // nama
-            // 
-            this.nama.HeaderText = "Nama";
-            this.nama.Name = "nama";
-            this.nama.ReadOnly = true;
-            this.nama.Width = 200;
-            // 
-            // harga
-            // 
-            this.harga.HeaderText = "Harga";
-            this.harga.Name = "harga";
-            this.harga.ReadOnly = true;
-            // 
-            // jumlah
-            // 
-            this.jumlah.HeaderText = "Jumlah";
-            this.jumlah.Name = "jumlah";
-            this.jumlah.ReadOnly = true;
-            // 
-            // stotal
-            // 
-            this.stotal.HeaderText = "Sub total";
-            this.stotal.Name = "stotal";
-            this.stotal.ReadOnly = true;
-            // 
-            // delete
-            // 
-            this.delete.HeaderText = "Delete";
-            this.delete.Name = "delete";
-            this.delete.ReadOnly = true;
-            this.delete.Width = 50;
             // 
             // label5
             // 

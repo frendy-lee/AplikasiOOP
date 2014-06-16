@@ -240,5 +240,10 @@ namespace Aplikasi_Transaksi_Penjualan
         {
 
         }
+
+        private void selectmenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
