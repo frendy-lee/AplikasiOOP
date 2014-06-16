@@ -48,5 +48,11 @@ namespace Aplikasi_Transaksi_Penjualan
             registUser reg = new registUser();
             reg.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrHistory his = new FrHistory();
+            his.Show();
+        }
     }
 }

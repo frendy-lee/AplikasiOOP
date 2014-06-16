@@ -12,3 +12,17 @@ D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Apl
 D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.FrTransaksi.resources
 D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Tambah_Makanan.resources
 D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\Aplikasi Transaksi Penjualan\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.registUser.resources
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.exe.config
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.exe
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.pdb
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csprojResolveAssemblyReference.cache
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.index.resources
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Menu_Makanan.resources
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.FrTransaksi.resources
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Properties.Resources.resources
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.registUser.resources
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Tambah_Makanan.resources
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csproj.GenerateResource.Cache
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.exe
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.pdb
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.FrHistory.resources
