@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registUser));
             this.lbltanggal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -35,14 +36,15 @@
             this.loginname = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.add = new System.Windows.Forms.Button();
-            this.close = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbltanggal
             // 
             this.lbltanggal.AutoSize = true;
             this.lbltanggal.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltanggal.Location = new System.Drawing.Point(94, 60);
+            this.lbltanggal.Location = new System.Drawing.Point(95, 213);
             this.lbltanggal.Name = "lbltanggal";
             this.lbltanggal.Size = new System.Drawing.Size(72, 20);
             this.lbltanggal.TabIndex = 1;
@@ -52,7 +54,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(94, 92);
+            this.label1.Location = new System.Drawing.Point(95, 245);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 2;
@@ -62,7 +64,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(94, 127);
+            this.label2.Location = new System.Drawing.Point(95, 280);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 20);
             this.label2.TabIndex = 3;
@@ -71,7 +73,7 @@
             // username
             // 
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(212, 58);
+            this.username.Location = new System.Drawing.Point(213, 211);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(180, 24);
             this.username.TabIndex = 4;
@@ -79,7 +81,7 @@
             // loginname
             // 
             this.loginname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginname.Location = new System.Drawing.Point(212, 90);
+            this.loginname.Location = new System.Drawing.Point(213, 243);
             this.loginname.Name = "loginname";
             this.loginname.Size = new System.Drawing.Size(180, 24);
             this.loginname.TabIndex = 5;
@@ -87,7 +89,7 @@
             // password
             // 
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(212, 125);
+            this.password.Location = new System.Drawing.Point(213, 278);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
             this.password.Size = new System.Drawing.Size(180, 24);
@@ -95,30 +97,53 @@
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(458, 58);
+            this.add.BackColor = System.Drawing.Color.Cyan;
+            this.add.Location = new System.Drawing.Point(459, 211);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(100, 89);
             this.add.TabIndex = 7;
             this.add.Text = "Register";
-            this.add.UseVisualStyleBackColor = true;
+            this.add.UseVisualStyleBackColor = false;
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
-            // close
+            // button5
             // 
-            this.close.Location = new System.Drawing.Point(530, 195);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(46, 41);
-            this.close.TabIndex = 8;
-            this.close.Text = "Close";
-            this.close.UseVisualStyleBackColor = true;
-            this.close.Click += new System.EventHandler(this.close_Click);
+            this.button5.BackColor = System.Drawing.Color.DarkOrange;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.button5.Location = new System.Drawing.Point(625, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(113, 35);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "  Keluar";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.DarkOrange;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(519, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(100, 35);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "   Kembali";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // registUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 248);
-            this.Controls.Add(this.close);
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(750, 750);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.add);
             this.Controls.Add(this.password);
             this.Controls.Add(this.loginname);
@@ -126,6 +151,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbltanggal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "registUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "registUser";
@@ -144,7 +170,8 @@
         private System.Windows.Forms.TextBox loginname;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Button add;
-        private System.Windows.Forms.Button close;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
 
     }
 }

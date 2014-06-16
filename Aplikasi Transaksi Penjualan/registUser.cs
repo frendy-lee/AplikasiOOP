@@ -81,14 +81,20 @@ namespace Aplikasi_Transaksi_Penjualan
             return strBuilder.ToString();
         }
 
-        private void close_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void registUser_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

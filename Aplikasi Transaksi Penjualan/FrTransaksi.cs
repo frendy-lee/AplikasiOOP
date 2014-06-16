@@ -68,39 +68,28 @@ namespace Aplikasi_Transaksi_Penjualan
             //dataGridView1.DataSource = arrStudents;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FrTransaksi_Load(object sender, EventArgs e)
         {
             DateTime sekarang;
             sekarang = DateTime.Now;
-
-            tanggal.Text = sekarang.ToShortDateString();
-            waktu.Text = sekarang.ToLongTimeString();
+            tanggal.Text = sekarang.ToString("dddd dd MMMM yyyy");
+            timer1.Enabled = true;
             loadComboBox();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void buka_Click(object sender, EventArgs e)
         {
             loadDataGrid();
+        }
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            waktu.Text = DateTime.Now.ToString("hh:mm:ss");
+            waktu.Font = new Font("DS-Digital", 16, FontStyle.Bold);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
