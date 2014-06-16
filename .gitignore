@@ -3,6 +3,7 @@
 
 # User-specific files
 *.suo
+*.v11.suo
 *.user
 *.sln.docstates
 
@@ -184,3 +185,17 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+
+    Status
+    API
+    Training
+    Shop
+    Blog
+    About
+
+    © 2014 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Contact
+
