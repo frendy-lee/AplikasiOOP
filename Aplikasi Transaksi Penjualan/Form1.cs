@@ -45,14 +45,19 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void button2_Click(object sender, EventArgs e)
         {
+            frmLaporan laporan = new frmLaporan();
+            laporan.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             registUser reg = new registUser();
             reg.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            FrHistory his = new FrHistory();
-            his.Show();
+            this.Close();
         }
     }
 }

@@ -1,33 +1,34 @@
-﻿namespace Aplikasi_Transaksi_Penjualan
-{
-    partial class FrTransaksi
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+﻿﻿namespace Aplikasi_Transaksi_Penjualan
+ {
+     partial class FrTransaksi
+     {
+         /// <summary>
+         /// Required designer variable.
+         /// </summary>
+         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+         /// <summary>
+         /// Clean up any resources being used.
+         /// </summary>
+         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+         protected override void Dispose(bool disposing)
+         {
+             if (disposing && (components != null))
+             {
+                 components.Dispose();
+             }
+             base.Dispose(disposing);
+         }
 
-        #region Windows Form Designer generated code
+         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
+         /// <summary>
+         /// Required method for Designer support - do not modify
+         /// the contents of this method with the code editor.
+         /// </summary>
+         private void InitializeComponent()
+         {
+            this.components = new System.ComponentModel.Container();
             this.lbltanggal = new System.Windows.Forms.Label();
             this.tanggal = new System.Windows.Forms.Label();
             this.waktu = new System.Windows.Forms.Label();
@@ -59,6 +60,7 @@
             this.txtbayar = new System.Windows.Forms.TextBox();
             this.txtkembali = new System.Windows.Forms.TextBox();
             this.Simpan = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jumlahUpDown)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +74,6 @@
             this.lbltanggal.Size = new System.Drawing.Size(56, 20);
             this.lbltanggal.TabIndex = 0;
             this.lbltanggal.Text = "Tanggal";
-            this.lbltanggal.Click += new System.EventHandler(this.label1_Click);
             // 
             // tanggal
             // 
@@ -91,7 +92,6 @@
             this.waktu.Name = "waktu";
             this.waktu.Size = new System.Drawing.Size(0, 20);
             this.waktu.TabIndex = 3;
-            this.waktu.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblwaktu
             // 
@@ -102,7 +102,6 @@
             this.lblwaktu.Size = new System.Drawing.Size(43, 20);
             this.lblwaktu.TabIndex = 2;
             this.lblwaktu.Text = "Waktu";
-            this.lblwaktu.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -140,7 +139,6 @@
             this.kode_member.Name = "kode_member";
             this.kode_member.Size = new System.Drawing.Size(123, 24);
             this.kode_member.TabIndex = 7;
-            this.kode_member.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dataGridView1
             // 
@@ -375,6 +373,10 @@
             this.Simpan.UseVisualStyleBackColor = false;
             this.Simpan.Click += new System.EventHandler(this.Simpan_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 95;
+            // 
             // FrTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -416,40 +418,41 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-        }
+         }
 
-        #endregion
+         #endregion
 
-        private System.Windows.Forms.Label lbltanggal;
-        private System.Windows.Forms.Label tanggal;
-        private System.Windows.Forms.Label waktu;
-        private System.Windows.Forms.Label lblwaktu;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblidkasir;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox kode_member;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button tambah;
-        private System.Windows.Forms.ComboBox selectmenu;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown jumlahUpDown;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nama;
-        private System.Windows.Forms.DataGridViewTextBoxColumn harga;
-        private System.Windows.Forms.DataGridViewTextBoxColumn jumlah;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stotal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn delete;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtstotal;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtpajak;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txttotal;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtbayar;
-        private System.Windows.Forms.TextBox txtkembali;
-        private System.Windows.Forms.Button Simpan;
-    }
-}
+         private System.Windows.Forms.Label lbltanggal;
+         private System.Windows.Forms.Label tanggal;
+         private System.Windows.Forms.Label waktu;
+         private System.Windows.Forms.Label lblwaktu;
+         private System.Windows.Forms.Label label1;
+         private System.Windows.Forms.Label lblidkasir;
+         private System.Windows.Forms.Label label2;
+         private System.Windows.Forms.TextBox kode_member;
+         private System.Windows.Forms.DataGridView dataGridView1;
+         private System.Windows.Forms.Button tambah;
+         private System.Windows.Forms.ComboBox selectmenu;
+         private System.Windows.Forms.Label label3;
+         private System.Windows.Forms.Label label4;
+         private System.Windows.Forms.NumericUpDown jumlahUpDown;
+         private System.Windows.Forms.DataGridViewTextBoxColumn kode;
+         private System.Windows.Forms.DataGridViewTextBoxColumn nama;
+         private System.Windows.Forms.DataGridViewTextBoxColumn harga;
+         private System.Windows.Forms.DataGridViewTextBoxColumn jumlah;
+         private System.Windows.Forms.DataGridViewTextBoxColumn stotal;
+         private System.Windows.Forms.DataGridViewTextBoxColumn delete;
+         private System.Windows.Forms.Label label5;
+         private System.Windows.Forms.TextBox txtstotal;
+         private System.Windows.Forms.Label label6;
+         private System.Windows.Forms.TextBox txtpajak;
+         private System.Windows.Forms.Label label7;
+         private System.Windows.Forms.TextBox txttotal;
+         private System.Windows.Forms.Label label8;
+         private System.Windows.Forms.Label label9;
+         private System.Windows.Forms.TextBox txtbayar;
+         private System.Windows.Forms.TextBox txtkembali;
+         private System.Windows.Forms.Button Simpan;
+         private System.Windows.Forms.Timer timer1;
+     }
+ }

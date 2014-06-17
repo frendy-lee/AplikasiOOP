@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Collections;
+using System.Globalization;
 
 namespace Aplikasi_Transaksi_Penjualan
 {
@@ -131,36 +132,18 @@ namespace Aplikasi_Transaksi_Penjualan
             txtkembali.Text = kembali.ToString();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FrTransaksi_Load(object sender, EventArgs e)
         {
+            CultureInfo culture = new CultureInfo("id-ID");
             DateTime sekarang;
             sekarang = DateTime.Now;
 
-            tanggal.Text = sekarang.ToShortDateString();
-            waktu.Text = sekarang.ToLongTimeString();
+            tanggal.Text = sekarang.ToString("dddd, dd-MMMM-yyyy", culture);
+            timer1.Enabled = true;
             loadComboBox();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void buka_Click(object sender, EventArgs e)
         {
             string selected = selectmenu.Text;
@@ -203,6 +186,8 @@ namespace Aplikasi_Transaksi_Penjualan
             }
 
             loadDataGrid(slect);
+            txtbayar.Text = "";
+            txtbayar.Focus();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -233,7 +218,6 @@ namespace Aplikasi_Transaksi_Penjualan
 
             txtbayar.Text = bayar.ToString();
             txtkembali.Text = kembali.ToString();
-
         }
 
         private void Simpan_Click(object sender, EventArgs e)
@@ -245,5 +229,12 @@ namespace Aplikasi_Transaksi_Penjualan
         {
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            waktu.Text = DateTime.Now.ToString("hh:mm:ss");
+            waktu.Font = new Font("DS-Digital", 16, FontStyle.Bold);
+        }
+
     }
 }
