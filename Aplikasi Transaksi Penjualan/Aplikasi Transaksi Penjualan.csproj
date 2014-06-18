@@ -50,6 +50,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrHistory.Designer.cs">
+      <DependentUpon>FrHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLaporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLaporan.Designer.cs">
+      <DependentUpon>frmLaporan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu Makanan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +91,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrHistory.resx">
+      <DependentUpon>FrHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLaporan.resx">
+      <DependentUpon>frmLaporan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu Makanan.resx">
       <DependentUpon>Menu Makanan.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +111,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="registUser.resx">
       <DependentUpon>registUser.cs</DependentUpon>
@@ -112,6 +131,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Untitled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Backward-icon2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
