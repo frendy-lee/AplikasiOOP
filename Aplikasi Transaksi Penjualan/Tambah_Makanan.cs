@@ -21,14 +21,16 @@ namespace Aplikasi_Transaksi_Penjualan
             public string namamakanan { private set; get; }
             public int hargamakanan { private set; get; }
             public int satuanmakanan { private set; get; }
+            public DateTime tanggal { private set; get; }
             public string keterangan { private set; get; }
 
-            public tambahmakanan(string idmakanan, string namamakanan, int hargamakanan, int satuanmakanan, string keterangan)
+            public tambahmakanan(string idmakanan, string namamakanan, int hargamakanan, int satuanmakanan, DateTime tanggal, string keterangan)
             {
                 this.idmakanan = idmakanan;
                 this.namamakanan = namamakanan;
                 this.hargamakanan = hargamakanan;
                 this.satuanmakanan = satuanmakanan;
+                this.tanggal = tanggal;
                 this.keterangan = keterangan;
                 MessageBox.Show(this.idmakanan + "-" +this.namamakanan+ "-" +this.hargamakanan+ "-" +this.satuanmakanan+ "-" +this.keterangan);
             }
@@ -57,6 +59,13 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void Tambah_Makanan_Load(object sender, EventArgs e)
         {
+            CultureInfo culture = new CultureInfo("id-ID");
+            DateTime sekarang;
+            sekarang = DateTime.Now;
+
+            /*Tanggal.Text = sekarang.ToString("dddd, dd-MMMM-yyyy", culture);
+            timer1.Enabled = true;
+            loadComboBox();*/
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -74,7 +83,9 @@ namespace Aplikasi_Transaksi_Penjualan
             SQLQuery.Connection = database;
             OleDbDataAdapter dataAdapter = new OleDbDataAdapter(SQLQuery);
             dataAdapter.Fill(data);
-            slect1.Add(new tambahmakanan(s1.ToString(), s2.ToString(), int.Parse(s3.ToString()), int.Parse(s5.ToString()), s6.ToString()));
+            DateTime sekarang;
+            sekarang = DateTime.Now;
+            slect1.Add(new tambahmakanan(s1.ToString(), s2.ToString(), int.Parse(s3.ToString()), int.Parse(s5.ToString()), , s6.ToString()));
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -90,6 +101,17 @@ namespace Aplikasi_Transaksi_Penjualan
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            //waktu.Text = DateTime.Now.ToString("hh:mm:ss");
+            //waktu.Font = new Font("DS-Digital", 16, FontStyle.Bold);
         }
     }
 }

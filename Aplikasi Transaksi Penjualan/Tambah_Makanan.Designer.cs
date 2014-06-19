@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,7 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -174,12 +175,9 @@
             this.button.UseVisualStyleBackColor = true;
             this.button.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dateTimePicker1
+            // timer2
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(188, 302);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(250, 20);
-            this.dateTimePicker1.TabIndex = 16;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Tambah_Makanan
             // 
@@ -188,7 +186,6 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(450, 450);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label7);
@@ -230,6 +227,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
