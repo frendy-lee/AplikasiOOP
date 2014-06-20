@@ -40,3 +40,17 @@ D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\AplikasiOOP\Aplikasi Transaksi P
 D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csproj.GenerateResource.Cache
 D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.exe
 D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.pdb
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.exe
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.pdb
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.index.resources
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.FrHistory.resources
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.frmLaporan.resources
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Menu_Makanan.resources
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.FrTransaksi.resources
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Properties.Resources.resources
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.registUser.resources
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Tambah_Makanan.resources
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csproj.GenerateResource.Cache
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.exe
+C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.pdb

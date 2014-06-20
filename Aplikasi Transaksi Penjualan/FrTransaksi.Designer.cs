@@ -74,6 +74,7 @@
             this.lbltanggal.Size = new System.Drawing.Size(56, 20);
             this.lbltanggal.TabIndex = 0;
             this.lbltanggal.Text = "Tanggal";
+            this.lbltanggal.Click += new System.EventHandler(this.lbltanggal_Click);
             // 
             // tanggal
             // 
