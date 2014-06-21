@@ -30,13 +30,13 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tambah = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblkgtn = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.selectmenu = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblusrid = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblsd = new System.Windows.Forms.Label();
             this.lbltanggal = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
@@ -45,13 +45,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.tambah);
-            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.lblkgtn);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.selectmenu);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.lblusrid);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblsd);
             this.groupBox1.Controls.Add(this.lbltanggal);
             this.groupBox1.Location = new System.Drawing.Point(24, 23);
             this.groupBox1.Name = "groupBox1";
@@ -71,16 +71,17 @@
             this.tambah.TabIndex = 5;
             this.tambah.Text = "Lihat History";
             this.tambah.UseVisualStyleBackColor = false;
+            this.tambah.Click += new System.EventHandler(this.tambah_Click);
             // 
-            // label5
+            // lblkgtn
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(29, 64);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 20);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Menu";
+            this.lblkgtn.AutoSize = true;
+            this.lblkgtn.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblkgtn.Location = new System.Drawing.Point(29, 64);
+            this.lblkgtn.Name = "lblkgtn";
+            this.lblkgtn.Size = new System.Drawing.Size(58, 20);
+            this.lblkgtn.TabIndex = 13;
+            this.lblkgtn.Text = "Kegiatan";
             // 
             // textBox2
             // 
@@ -98,19 +99,20 @@
             this.selectmenu.Size = new System.Drawing.Size(200, 21);
             this.selectmenu.TabIndex = 3;
             // 
-            // label2
+            // lblusrid
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(360, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Member ID";
+            this.lblusrid.AutoSize = true;
+            this.lblusrid.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusrid.Location = new System.Drawing.Point(360, 62);
+            this.lblusrid.Name = "lblusrid";
+            this.lblusrid.Size = new System.Drawing.Size(50, 20);
+            this.lblusrid.TabIndex = 5;
+            this.lblusrid.Text = "User ID";
+            this.lblusrid.Click += new System.EventHandler(this.label2_Click);
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(446, 27);
+            this.dateTimePicker2.Location = new System.Drawing.Point(446, 25);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 2;
@@ -122,15 +124,15 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 1;
             // 
-            // label1
+            // lblsd
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(360, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "s.d.";
+            this.lblsd.AutoSize = true;
+            this.lblsd.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsd.Location = new System.Drawing.Point(360, 27);
+            this.lblsd.Name = "lblsd";
+            this.lblsd.Size = new System.Drawing.Size(28, 20);
+            this.lblsd.TabIndex = 2;
+            this.lblsd.Text = "s.d.";
             // 
             // lbltanggal
             // 
@@ -173,12 +175,12 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lbltanggal;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblsd;
+        private System.Windows.Forms.Label lblusrid;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox selectmenu;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblkgtn;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button tambah;
         private System.Windows.Forms.GroupBox groupBox2;

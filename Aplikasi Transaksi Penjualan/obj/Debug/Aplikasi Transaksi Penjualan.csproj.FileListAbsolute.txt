@@ -54,3 +54,4 @@ C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_
 C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csproj.GenerateResource.Cache
 C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.exe
 C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.pdb
+C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.frmLaporan.resources
