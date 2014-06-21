@@ -59,10 +59,11 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkedListBox1
             // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.Lime;
+            this.checkedListBox1.BackColor = System.Drawing.Color.White;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(12, 74);
             this.checkedListBox1.Name = "checkedListBox1";
@@ -71,7 +72,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Lime;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(242, 74);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(480, 619);
@@ -90,6 +91,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu_Makanan";
             this.Text = "Menu_Makanan";
             this.ResumeLayout(false);
