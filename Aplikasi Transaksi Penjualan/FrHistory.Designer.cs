@@ -28,128 +28,183 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tambah = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.selectmenu = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            this.labeldate = new System.Windows.Forms.Label();
+            this.labeltime = new System.Windows.Forms.Label();
+            this.groupBoxcari = new System.Windows.Forms.GroupBox();
+            this.buttonhistory = new System.Windows.Forms.Button();
+            this.labelkegiatan = new System.Windows.Forms.Label();
+            this.textBoxuserid = new System.Windows.Forms.TextBox();
+            this.labeluserid = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.selectkegiatan = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbltanggal = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1.SuspendLayout();
+            this.labelsd = new System.Windows.Forms.Label();
+            this.labeltanggal = new System.Windows.Forms.Label();
+            this.groupBoxhistory = new System.Windows.Forms.GroupBox();
+            this.datagridhistory = new System.Windows.Forms.DataGridView();
+            this.buttonkembali = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.groupBoxcari.SuspendLayout();
+            this.groupBoxhistory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridhistory)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // labeldate
             // 
-            this.groupBox1.Controls.Add(this.tambah);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.selectmenu);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.lbltanggal);
-            this.groupBox1.Location = new System.Drawing.Point(24, 23);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(678, 143);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cari";
+            this.labeldate.AutoSize = true;
+            this.labeldate.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeldate.Location = new System.Drawing.Point(31, 25);
+            this.labeldate.Name = "labeldate";
+            this.labeldate.Size = new System.Drawing.Size(62, 20);
+            this.labeldate.TabIndex = 1;
+            this.labeldate.Text = "Tanggal :";
             // 
-            // tambah
+            // labeltime
             // 
-            this.tambah.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tambah.FlatAppearance.BorderSize = 0;
-            this.tambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tambah.Location = new System.Drawing.Point(230, 98);
-            this.tambah.Name = "tambah";
-            this.tambah.Size = new System.Drawing.Size(273, 32);
-            this.tambah.TabIndex = 5;
-            this.tambah.Text = "Lihat History";
-            this.tambah.UseVisualStyleBackColor = false;
+            this.labeltime.AutoSize = true;
+            this.labeltime.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeltime.Location = new System.Drawing.Point(552, 25);
+            this.labeltime.Name = "labeltime";
+            this.labeltime.Size = new System.Drawing.Size(49, 20);
+            this.labeltime.TabIndex = 2;
+            this.labeltime.Text = "Waktu :";
             // 
-            // label5
+            // groupBoxcari
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(29, 64);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 20);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Menu";
+            this.groupBoxcari.Controls.Add(this.buttonhistory);
+            this.groupBoxcari.Controls.Add(this.labelkegiatan);
+            this.groupBoxcari.Controls.Add(this.textBoxuserid);
+            this.groupBoxcari.Controls.Add(this.labeluserid);
+            this.groupBoxcari.Controls.Add(this.dateTimePicker2);
+            this.groupBoxcari.Controls.Add(this.selectkegiatan);
+            this.groupBoxcari.Controls.Add(this.dateTimePicker1);
+            this.groupBoxcari.Controls.Add(this.labelsd);
+            this.groupBoxcari.Controls.Add(this.labeltanggal);
+            this.groupBoxcari.Location = new System.Drawing.Point(35, 70);
+            this.groupBoxcari.Name = "groupBoxcari";
+            this.groupBoxcari.Size = new System.Drawing.Size(678, 148);
+            this.groupBoxcari.TabIndex = 0;
+            this.groupBoxcari.TabStop = false;
+            this.groupBoxcari.Text = "Cari";
             // 
-            // textBox2
+            // buttonhistory
             // 
-            this.textBox2.Location = new System.Drawing.Point(446, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 4;
+            this.buttonhistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(172)))), ((int)(((byte)(194)))));
+            this.buttonhistory.FlatAppearance.BorderSize = 0;
+            this.buttonhistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonhistory.Location = new System.Drawing.Point(230, 98);
+            this.buttonhistory.Name = "buttonhistory";
+            this.buttonhistory.Size = new System.Drawing.Size(273, 32);
+            this.buttonhistory.TabIndex = 5;
+            this.buttonhistory.Text = "Lihat History";
+            this.buttonhistory.UseVisualStyleBackColor = false;
+            this.buttonhistory.Click += new System.EventHandler(this.buttonhistory_Click);
             // 
-            // selectmenu
+            // labelkegiatan
             // 
-            this.selectmenu.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.selectmenu.FormattingEnabled = true;
-            this.selectmenu.Location = new System.Drawing.Point(111, 62);
-            this.selectmenu.Name = "selectmenu";
-            this.selectmenu.Size = new System.Drawing.Size(200, 21);
-            this.selectmenu.TabIndex = 3;
+            this.labelkegiatan.AutoSize = true;
+            this.labelkegiatan.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelkegiatan.Location = new System.Drawing.Point(360, 27);
+            this.labelkegiatan.Name = "labelkegiatan";
+            this.labelkegiatan.Size = new System.Drawing.Size(58, 20);
+            this.labelkegiatan.TabIndex = 4;
+            this.labelkegiatan.Text = "Kegiatan";
             // 
-            // label2
+            // textBoxuserid
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(360, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Member ID";
+            this.textBoxuserid.Location = new System.Drawing.Point(111, 27);
+            this.textBoxuserid.Name = "textBoxuserid";
+            this.textBoxuserid.Size = new System.Drawing.Size(200, 20);
+            this.textBoxuserid.TabIndex = 1;
+            // 
+            // labeluserid
+            // 
+            this.labeluserid.AutoSize = true;
+            this.labeluserid.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeluserid.Location = new System.Drawing.Point(29, 27);
+            this.labeluserid.Name = "labeluserid";
+            this.labeluserid.Size = new System.Drawing.Size(50, 20);
+            this.labeluserid.TabIndex = 3;
+            this.labeluserid.Text = "User ID";
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(446, 27);
+            this.dateTimePicker2.Location = new System.Drawing.Point(447, 64);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 2;
+            this.dateTimePicker2.TabIndex = 4;
+            // 
+            // selectkegiatan
+            // 
+            this.selectkegiatan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.selectkegiatan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.selectkegiatan.FormattingEnabled = true;
+            this.selectkegiatan.Location = new System.Drawing.Point(447, 27);
+            this.selectkegiatan.Name = "selectkegiatan";
+            this.selectkegiatan.Size = new System.Drawing.Size(200, 21);
+            this.selectkegiatan.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(111, 27);
+            this.dateTimePicker1.Location = new System.Drawing.Point(111, 64);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dateTimePicker1.TabIndex = 3;
             // 
-            // label1
+            // labelsd
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(360, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "s.d.";
+            this.labelsd.AutoSize = true;
+            this.labelsd.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelsd.Location = new System.Drawing.Point(360, 64);
+            this.labelsd.Name = "labelsd";
+            this.labelsd.Size = new System.Drawing.Size(28, 20);
+            this.labelsd.TabIndex = 6;
+            this.labelsd.Text = "s.d.";
             // 
-            // lbltanggal
+            // labeltanggal
             // 
-            this.lbltanggal.AutoSize = true;
-            this.lbltanggal.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltanggal.Location = new System.Drawing.Point(29, 26);
-            this.lbltanggal.Name = "lbltanggal";
-            this.lbltanggal.Size = new System.Drawing.Size(56, 20);
-            this.lbltanggal.TabIndex = 1;
-            this.lbltanggal.Text = "Tanggal";
+            this.labeltanggal.AutoSize = true;
+            this.labeltanggal.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeltanggal.Location = new System.Drawing.Point(29, 64);
+            this.labeltanggal.Name = "labeltanggal";
+            this.labeltanggal.Size = new System.Drawing.Size(56, 20);
+            this.labeltanggal.TabIndex = 5;
+            this.labeltanggal.Text = "Tanggal";
             // 
-            // groupBox2
+            // groupBoxhistory
             // 
-            this.groupBox2.Location = new System.Drawing.Point(24, 186);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(678, 439);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "History";
+            this.groupBoxhistory.Controls.Add(this.datagridhistory);
+            this.groupBoxhistory.Controls.Add(this.buttonkembali);
+            this.groupBoxhistory.Location = new System.Drawing.Point(35, 242);
+            this.groupBoxhistory.Name = "groupBoxhistory";
+            this.groupBoxhistory.Size = new System.Drawing.Size(678, 481);
+            this.groupBoxhistory.TabIndex = 1;
+            this.groupBoxhistory.TabStop = false;
+            this.groupBoxhistory.Text = "History";
+            // 
+            // datagridhistory
+            // 
+            this.datagridhistory.AllowUserToAddRows = false;
+            this.datagridhistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagridhistory.Location = new System.Drawing.Point(33, 40);
+            this.datagridhistory.Name = "datagridhistory";
+            this.datagridhistory.Size = new System.Drawing.Size(613, 374);
+            this.datagridhistory.TabIndex = 15;
+            this.datagridhistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridhistory_CellContentClick);
+            // 
+            // buttonkembali
+            // 
+            this.buttonkembali.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(172)))), ((int)(((byte)(194)))));
+            this.buttonkembali.FlatAppearance.BorderSize = 0;
+            this.buttonkembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonkembali.Location = new System.Drawing.Point(230, 436);
+            this.buttonkembali.Name = "buttonkembali";
+            this.buttonkembali.Size = new System.Drawing.Size(273, 32);
+            this.buttonkembali.TabIndex = 14;
+            this.buttonkembali.Text = "Kembali";
+            this.buttonkembali.UseVisualStyleBackColor = false;
+            this.buttonkembali.Click += new System.EventHandler(this.buttonkembali_Click);
             // 
             // FrHistory
             // 
@@ -157,30 +212,41 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(750, 750);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.labeldate);
+            this.Controls.Add(this.labeltime);
+            this.Controls.Add(this.groupBoxhistory);
+            this.Controls.Add(this.groupBoxcari);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrHistory";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Load += new System.EventHandler(this.FrHistory_Load);
+            this.groupBoxcari.ResumeLayout(false);
+            this.groupBoxcari.PerformLayout();
+            this.groupBoxhistory.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.datagridhistory)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lbltanggal;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.GroupBox groupBoxcari;
+        private System.Windows.Forms.GroupBox groupBoxhistory;
+        private System.Windows.Forms.Label labeltanggal;
+        private System.Windows.Forms.Label labelsd;
+        private System.Windows.Forms.Label labelkegiatan;
+        private System.Windows.Forms.Label labeluserid;
+        private System.Windows.Forms.Label labeldate;
+        private System.Windows.Forms.Label labeltime;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox selectmenu;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button tambah;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.ComboBox selectkegiatan;
+        private System.Windows.Forms.TextBox textBoxuserid;
+        private System.Windows.Forms.Button buttonhistory;
+        private System.Windows.Forms.Button buttonkembali;
+        private System.Windows.Forms.DataGridView datagridhistory;
+        private System.Windows.Forms.Timer timer1;
     }
 }

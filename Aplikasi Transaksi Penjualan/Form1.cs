@@ -39,10 +39,8 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menu_Makanan mk = new Menu_Makanan();
-            mk.Show();
-            //FrTransaksi tran = new FrTransaksi();
-            //tran.Show();
+            FrTransaksi tran = new FrTransaksi();
+            tran.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -53,15 +51,19 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Member member = new Member();
-            member.Show();
-            //registUser reg = new registUser();
-            //reg.Show();
+            registUser reg = new registUser();
+            reg.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrHistory his = new FrHistory();
+            his.Show();
         }
     }
 }
