@@ -39,8 +39,10 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrTransaksi tran = new FrTransaksi();
-            tran.Show();
+            Menu_Makanan mm = new Menu_Makanan();
+            mm.Show();
+            //FrTransaksi tran = new FrTransaksi();
+            //tran.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
