@@ -59,5 +59,11 @@ namespace Aplikasi_Transaksi_Penjualan
         {
             this.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrHistory his = new FrHistory();
+            his.Show();
+        }
     }
 }
