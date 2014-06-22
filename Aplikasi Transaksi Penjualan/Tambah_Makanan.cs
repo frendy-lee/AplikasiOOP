@@ -37,7 +37,7 @@ namespace Aplikasi_Transaksi_Penjualan
         }
         OleDbConnection database;
         ArrayList slect1;
-        DataGridViewButtonColumn bdelete;
+        //DataGridViewButtonColumn bdelete;
 
         public Tambah_Makanan()
         {
@@ -85,7 +85,7 @@ namespace Aplikasi_Transaksi_Penjualan
             dataAdapter.Fill(data);
             DateTime sekarang;
             sekarang = DateTime.Now;
-            slect1.Add(new tambahmakanan(s1.ToString(), s2.ToString(), int.Parse(s3.ToString()), int.Parse(s5.ToString()), , s6.ToString()));
+            //slect1.Add(new tambahmakanan(s1.ToString(), s2.ToString(), int.Parse(s3.ToString()), int.Parse(s5.ToString()), s6.ToString()));
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
