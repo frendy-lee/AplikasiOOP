@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tanggal = new System.Windows.Forms.Label();
             this.harga = new System.Windows.Forms.Label();
             this.nama = new System.Windows.Forms.Label();
@@ -42,7 +43,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,6 +93,15 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detail";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(40, 369);
+            this.textBox2.MaxLength = 50;
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(391, 220);
+            this.textBox2.TabIndex = 15;
             // 
             // tanggal
             // 
@@ -191,14 +202,24 @@
             this.listBox1.TabIndex = 5;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedValueChanged_1);
             // 
-            // textBox2
+            // button2
             // 
-            this.textBox2.Location = new System.Drawing.Point(40, 369);
-            this.textBox2.MaxLength = 50;
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(391, 220);
-            this.textBox2.TabIndex = 15;
+            this.button2.Location = new System.Drawing.Point(46, 45);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(28, 23);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "-";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(12, 13);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Back";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Menu_Makanan
             // 
@@ -206,6 +227,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(734, 711);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
@@ -240,5 +263,7 @@
         private System.Windows.Forms.Label nama;
         private System.Windows.Forms.Label kode;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
