@@ -84,14 +84,27 @@ namespace Aplikasi_Transaksi_Penjualan
 
             datagridhistory.Columns[0].Width = 100;
             datagridhistory.Columns[1].Width = 200;
-            datagridhistory.Columns[2].Width = 100;
-            datagridhistory.Columns[3].Width = 100;
-            datagridhistory.Columns[4].Width = 100;
+            datagridhistory.Columns[2].Width = 200;
+            datagridhistory.Columns[2].Width = 200;
         }
 
         private void buttonkembali_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        
+        private void buttonhistory_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=../../Dbase/TP.mdb";
+            string sql = "SELECT  FROM tb_kegiatan";
+            OleDbConnection connection = new OleDbConnection(connectionString);
+            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sql, connection);
+            DataSet dataset = new DataSet();
+            connection.Open();
+            dataAdapter.Fill(dataset, "Kegiatan");
+            connection.Close();
+            datagridhistory.DataSource = dataset;
+            datagridhistory.DataMember = "Kegiatan";
         }
 
         private void datagridhistory_CellContentClick(object sender, DataGridViewCellEventArgs e)

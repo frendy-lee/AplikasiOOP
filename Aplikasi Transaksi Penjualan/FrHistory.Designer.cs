@@ -43,11 +43,11 @@
             this.labeltanggal = new System.Windows.Forms.Label();
             this.groupBoxhistory = new System.Windows.Forms.GroupBox();
             this.datagridhistory = new System.Windows.Forms.DataGridView();
-            this.userID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kegiatan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tgl = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonkembali = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tanggal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kegiatan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxcari.SuspendLayout();
             this.groupBoxhistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridhistory)).BeginInit();
@@ -93,7 +93,7 @@
             // 
             // buttonhistory
             // 
-            this.buttonhistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonhistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(172)))), ((int)(((byte)(194)))));
             this.buttonhistory.FlatAppearance.BorderSize = 0;
             this.buttonhistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonhistory.Location = new System.Drawing.Point(230, 98);
@@ -102,6 +102,7 @@
             this.buttonhistory.TabIndex = 5;
             this.buttonhistory.Text = "Lihat History";
             this.buttonhistory.UseVisualStyleBackColor = false;
+            this.buttonhistory.Click += new System.EventHandler(this.buttonhistory_Click);
             // 
             // labelkegiatan
             // 
@@ -190,14 +191,32 @@
             this.datagridhistory.AllowUserToAddRows = false;
             this.datagridhistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridhistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tanggal,
             this.userID,
-            this.kegiatan,
-            this.tgl});
+            this.kegiatan});
             this.datagridhistory.Location = new System.Drawing.Point(33, 40);
             this.datagridhistory.Name = "datagridhistory";
             this.datagridhistory.Size = new System.Drawing.Size(613, 374);
             this.datagridhistory.TabIndex = 15;
             this.datagridhistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridhistory_CellContentClick);
+            // 
+            // buttonkembali
+            // 
+            this.buttonkembali.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(172)))), ((int)(((byte)(194)))));
+            this.buttonkembali.FlatAppearance.BorderSize = 0;
+            this.buttonkembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonkembali.Location = new System.Drawing.Point(230, 436);
+            this.buttonkembali.Name = "buttonkembali";
+            this.buttonkembali.Size = new System.Drawing.Size(273, 32);
+            this.buttonkembali.TabIndex = 14;
+            this.buttonkembali.Text = "Kembali";
+            this.buttonkembali.UseVisualStyleBackColor = false;
+            this.buttonkembali.Click += new System.EventHandler(this.buttonkembali_Click);
+            // 
+            // tanggal
+            // 
+            this.tanggal.HeaderText = "Tanggal";
+            this.tanggal.Name = "tanggal";
             // 
             // userID
             // 
@@ -208,24 +227,6 @@
             // 
             this.kegiatan.HeaderText = "Kegiatan";
             this.kegiatan.Name = "kegiatan";
-            // 
-            // tgl
-            // 
-            this.tgl.HeaderText = "Tanggal";
-            this.tgl.Name = "tgl";
-            // 
-            // buttonkembali
-            // 
-            this.buttonkembali.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonkembali.FlatAppearance.BorderSize = 0;
-            this.buttonkembali.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonkembali.Location = new System.Drawing.Point(230, 436);
-            this.buttonkembali.Name = "buttonkembali";
-            this.buttonkembali.Size = new System.Drawing.Size(273, 32);
-            this.buttonkembali.TabIndex = 14;
-            this.buttonkembali.Text = "Kembali";
-            this.buttonkembali.UseVisualStyleBackColor = false;
-            this.buttonkembali.Click += new System.EventHandler(this.buttonkembali_Click);
             // 
             // FrHistory
             // 
@@ -261,16 +262,16 @@
         private System.Windows.Forms.Label labeluserid;
         private System.Windows.Forms.Label labeldate;
         private System.Windows.Forms.Label labeltime;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.ComboBox selectkegiatan;
         private System.Windows.Forms.TextBox textBoxuserid;
         private System.Windows.Forms.Button buttonhistory;
         private System.Windows.Forms.Button buttonkembali;
         private System.Windows.Forms.DataGridView datagridhistory;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tanggal;
         private System.Windows.Forms.DataGridViewTextBoxColumn userID;
         private System.Windows.Forms.DataGridViewTextBoxColumn kegiatan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tgl;
     }
 }
