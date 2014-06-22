@@ -94,16 +94,18 @@ namespace Aplikasi_Transaksi_Penjualan
             i.Show();
         }
 
-       public bool deletemakanan(string idmakanan)
+       public void deletemakanan(string idmakanan)
         {
-            string queryInsertUser = "DELETE FROM tb_menu WHERE kode_menu = "+ idmakanan;
+            string queryInsertUser = "DELETE FROM tb_menu WHERE kode_menu = '"+ idmakanan+"'";
             OleDbCommand SQLInsert = new OleDbCommand(queryInsertUser, database);
             int result = SQLInsert.ExecuteNonQuery();
-            MessageBox.Show(result.ToString());
             if (result == 1)
-                return true;
+                MessageBox.Show(idmakanan + " Dihapus");
             else
-                return false;
+                MessageBox.Show("Gagal");
+
+            listBox1.Items.Clear();
+            Loadlist();
 
         }
 
