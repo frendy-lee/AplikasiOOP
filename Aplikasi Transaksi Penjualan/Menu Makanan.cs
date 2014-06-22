@@ -94,9 +94,9 @@ namespace Aplikasi_Transaksi_Penjualan
             i.Show();
         }
 
-       public bool deletemakanan(string idmakanan, string namamakanan, int hargamakanan, string keterangan)
+       public bool deletemakanan(string idmakanan)
         {
-            string queryInsertUser = "DELETE FROM tb_menu([kode_menu],[nama_menu],[harga],[keterangan]) VALUES('" + idmakanan + "','" + namamakanan + "','" + int.Parse(hargamakanan.ToString()) + "','" + keterangan + "')";
+            string queryInsertUser = "DELETE FROM tb_menu WHERE kode_menu = "+ idmakanan;
             OleDbCommand SQLInsert = new OleDbCommand(queryInsertUser, database);
             int result = SQLInsert.ExecuteNonQuery();
             MessageBox.Show(result.ToString());
@@ -110,18 +110,10 @@ namespace Aplikasi_Transaksi_Penjualan
         private void button2_Click(object sender, EventArgs e)
         {
             string idmakanan ;
-            string namamakanan;
-            int hargamakanan;
-            DateTime tanggal1;
-            string keterangan;
-            if (kode.Text != null && nama.Text != null && harga.Text != null && textBox2.Text != null)
+            if (kode.Text != null)
             {
                 idmakanan = kode.Text;
-                namamakanan = nama.Text;
-                hargamakanan = int.Parse(harga.Text);
-                keterangan = textBox2.Text;
-                
-                deletemakanan(idmakanan, namamakanan, hargamakanan, keterangan);
+                deletemakanan(idmakanan);
             }
         }
 
