@@ -52,7 +52,7 @@
             this.btnHarian.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnHarian.Location = new System.Drawing.Point(154, 146);
             this.btnHarian.Name = "btnHarian";
-            this.btnHarian.Size = new System.Drawing.Size(145, 85);
+            this.btnHarian.Size = new System.Drawing.Size(145, 48);
             this.btnHarian.TabIndex = 0;
             this.btnHarian.Text = "Harian";
             this.btnHarian.UseVisualStyleBackColor = false;
@@ -70,7 +70,7 @@
             this.btnTahunan.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnTahunan.Location = new System.Drawing.Point(299, 305);
             this.btnTahunan.Name = "btnTahunan";
-            this.btnTahunan.Size = new System.Drawing.Size(145, 85);
+            this.btnTahunan.Size = new System.Drawing.Size(145, 49);
             this.btnTahunan.TabIndex = 1;
             this.btnTahunan.Text = "Tahunan";
             this.btnTahunan.UseVisualStyleBackColor = false;
@@ -88,7 +88,7 @@
             this.btnBulanan.ForeColor = System.Drawing.Color.DarkOrange;
             this.btnBulanan.Location = new System.Drawing.Point(456, 146);
             this.btnBulanan.Name = "btnBulanan";
-            this.btnBulanan.Size = new System.Drawing.Size(145, 85);
+            this.btnBulanan.Size = new System.Drawing.Size(145, 48);
             this.btnBulanan.TabIndex = 2;
             this.btnBulanan.Text = "Bulanan";
             this.btnBulanan.UseVisualStyleBackColor = false;

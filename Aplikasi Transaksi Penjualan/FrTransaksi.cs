@@ -313,5 +313,12 @@ namespace Aplikasi_Transaksi_Penjualan
             waktu.Font = new Font("DS-Digital", 10, FontStyle.Bold);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+            FrmLogin login = new FrmLogin();
+            login.Show();
+        }
+
     }
 }
