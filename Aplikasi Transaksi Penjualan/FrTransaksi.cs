@@ -235,11 +235,23 @@ namespace Aplikasi_Transaksi_Penjualan
             
             string queryInsertUser = "INSERT INTO tb_transaksi([no_kwitansi],[id_user],[kode_member],[tanggal],[waktu],[subtotal],[nilai_pajak],[total],[bayar])  VALUES('" + no_kwitansi + "','12123','" + kodemember + "','"+tgl+"','"+waktu+"',"+subtotal+","+nilaipajak+","+total+","+bayar+")";
             OleDbCommand SQLInsert = new OleDbCommand(queryInsertUser, database);
-            int result = SQLInsert.ExecuteNonQuery();            
+            int result = SQLInsert.ExecuteNonQuery();
             if (result == 1)
-                MessageBox.Show(result.ToString());
+            {
+                MessageBox.Show("Pesanan disimpan. Masukkan Pemesanan Baru.");
+                dataGridView1.DataSource = null;
+                dataGridView1.Columns.Clear();
+                txtstotal.Clear();
+                txtpajak.Clear();
+                txttotal.Clear();
+                txtbayar.Clear();
+                kode_member.Clear();
+                tambah.Focus();
+            }
             else
-                MessageBox.Show(result.ToString());
+            {
+                MessageBox.Show("Penyimpanan Gagal.");
+            }
         }
 
         public string new_no_kwitansi()
