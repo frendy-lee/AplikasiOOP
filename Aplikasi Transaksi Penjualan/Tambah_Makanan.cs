@@ -103,5 +103,12 @@ namespace Aplikasi_Transaksi_Penjualan
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Close();
+            Menu_Makanan mm = new Menu_Makanan();
+            mm.Show();
+        }
     }
 }

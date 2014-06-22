@@ -87,5 +87,12 @@ namespace Aplikasi_Transaksi_Penjualan
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
+            index i = new index();
+            i.Show();
+        }
+
     }
 }
