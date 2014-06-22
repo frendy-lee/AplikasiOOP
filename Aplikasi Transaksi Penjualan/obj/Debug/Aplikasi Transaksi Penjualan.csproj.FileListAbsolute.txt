@@ -55,3 +55,4 @@ C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi 
 C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.exe
 C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.pdb
 C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.frmLaporan.resources
+C:\Users\Steven Handoko\Downloads\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.exe.config
