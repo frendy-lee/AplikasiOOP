@@ -62,6 +62,12 @@
     <Compile Include="frmLaporan.Designer.cs">
       <DependentUpon>frmLaporan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member.designer.cs">
+      <DependentUpon>Member.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu Makanan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     <Compile Include="registUser.Designer.cs">
       <DependentUpon>registUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="TambahMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahMember.designer.cs">
+      <DependentUpon>TambahMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tambah_Makanan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLaporan.resx">
       <DependentUpon>frmLaporan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member.resx">
+      <DependentUpon>Member.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu Makanan.resx">
       <DependentUpon>Menu Makanan.cs</DependentUpon>
@@ -115,6 +130,9 @@
     </Compile>
     <EmbeddedResource Include="registUser.resx">
       <DependentUpon>registUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahMember.resx">
+      <DependentUpon>TambahMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tambah_Makanan.resx">
       <DependentUpon>Tambah_Makanan.cs</DependentUpon>
