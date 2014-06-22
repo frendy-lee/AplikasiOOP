@@ -15,33 +15,19 @@ namespace Aplikasi_Transaksi_Penjualan
 {
     public partial class Tambah_Makanan : Form
     {
-        public class tambahmakanan
-        {
-            public string idmakanan { private set; get; }
-            public string namamakanan { private set; get; }
-            public int hargamakanan { private set; get; }
-            public int satuanmakanan { private set; get; }
-            public DateTime tanggal { private set; get; }
-            public string keterangan { private set; get; }
-
-            public tambahmakanan(string idmakanan, string namamakanan, int hargamakanan, int satuanmakanan, DateTime tanggal, string keterangan)
-            {
-                this.idmakanan = idmakanan;
-                this.namamakanan = namamakanan;
-                this.hargamakanan = hargamakanan;
-                this.satuanmakanan = satuanmakanan;
-                this.tanggal = tanggal;
-                this.keterangan = keterangan;
-                MessageBox.Show(this.idmakanan + "-" +this.namamakanan+ "-" +this.hargamakanan+ "-" +this.satuanmakanan+ "-" +this.keterangan);
-            }
-        }
         OleDbConnection database;
-        ArrayList slect1;
-        DataGridViewButtonColumn bdelete;
+        Menu_Makanan mm = new Menu_Makanan();
+        public string idmakanan { set; get; }
+        public string namamakanan { set; get; }
+        public int hargamakanan { set; get; }
+        public int satuanmakanan {set; get; }
+        public DateTime tanggal { set; get; }
+        public string keterangan {set; get; }
 
         public Tambah_Makanan()
         {
             InitializeComponent();
+            //initiate DB connection
             string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=../../Dbase/TP.mdb";
             try
             {
@@ -53,38 +39,40 @@ namespace Aplikasi_Transaksi_Penjualan
                 Console.WriteLine(ex.Message);
                 return;
             }
-
-            slect1 = new ArrayList();
         }
+        
+        ArrayList slect1;
 
+        public bool savemakanan(string idmakanan, string namamakanan, int hargamakanan, DateTime tanggal, string keterangan)
+        {
+            string queryInsertUser = "INSERT INTO tb_menu([kode_menu],[nama_menu],[harga],[tanggal],[keterangan]) VALUES('" + idmakanan + "','" + namamakanan + "','" + int.Parse(hargamakanan.ToString()) + "','"+ tanggal +"','" + keterangan + "')";
+            OleDbCommand SQLInsert = new OleDbCommand(queryInsertUser, database);
+            int result = SQLInsert.ExecuteNonQuery();
+            MessageBox.Show(result.ToString());
+            if (result == 1)
+                return true;
+            else
+                return false;
+             
+        }
         private void Tambah_Makanan_Load(object sender, EventArgs e)
         {
-            CultureInfo culture = new CultureInfo("id-ID");
-            DateTime sekarang;
-            sekarang = DateTime.Now;
-
-            /*Tanggal.Text = sekarang.ToString("dddd, dd-MMMM-yyyy", culture);
-            timer1.Enabled = true;
-            loadComboBox();*/
+            timer2.Enabled = true;            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text != null && textBox2.Text != null && textBox3.Text != null && textBox6.Text != null)
+            {
+                idmakanan = textBox1.Text;
+                namamakanan = textBox2.Text;
+                hargamakanan = int.Parse(textBox3.Text);
+                keterangan = textBox6.Text;
+                tanggal = dateTimePicker1.Value;
+                savemakanan(idmakanan,namamakanan,hargamakanan,tanggal,keterangan);
+            }
+            mm.Show();
             Close();
-            string s1 = textBox1.Text;
-            string s2 = textBox2.Text;
-            string s3 = textBox3.Text;
-            //string s4 = textBox4.Text;
-            string s5 = textBox5.Text;
-            string s6 = textBox6.Text;
-            OleDbCommand SQLQuery = new OleDbCommand();
-            DataTable data = new DataTable();
-            SQLQuery.CommandText = "SELECT kode_menu,nama_menu,harga FROM tb_menu";
-            SQLQuery.Connection = database;
-            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(SQLQuery);
-            dataAdapter.Fill(data);
-            DateTime sekarang;
-            sekarang = DateTime.Now;
             slect1.Add(new tambahmakanan(s1.ToString(), s2.ToString(), int.Parse(s3.ToString()), int.Parse(s5.ToString()),sekarang, s6.ToString()));
         }
 
@@ -110,8 +98,11 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            //waktu.Text = DateTime.Now.ToString("hh:mm:ss");
-            //waktu.Font = new Font("DS-Digital", 16, FontStyle.Bold);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
