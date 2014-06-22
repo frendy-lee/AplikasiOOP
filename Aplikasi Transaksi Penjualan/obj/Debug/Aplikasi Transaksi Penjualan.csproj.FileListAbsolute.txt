@@ -55,3 +55,20 @@ C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi 
 C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.exe
 C:\Users\HP\Desktop\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.pdb
 C:\Users\Dewi Ratna Sari\Documents\GitHub\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.frmLaporan.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.exe.config
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.exe
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.pdb
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.exe
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\bin\Debug\Aplikasi Transaksi Penjualan.pdb
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csprojResolveAssemblyReference.cache
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.index.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.FrHistory.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.frmLaporan.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Menu_Makanan.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.FrTransaksi.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Properties.Resources.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.registUser.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Tambah_Makanan.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csproj.GenerateResource.Cache
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Member.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.TambahMember.resources
