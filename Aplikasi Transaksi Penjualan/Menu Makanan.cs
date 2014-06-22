@@ -119,5 +119,31 @@ namespace Aplikasi_Transaksi_Penjualan
             }
         }
 
+        public void cari(string idmakanan)
+        {
+            string ketik = listBox1.GetItemText(listBox1.SelectedItem);
+            OleDbCommand SQLQuery = new OleDbCommand();
+            DataTable data = new DataTable();
+            SQLQuery.CommandText = "SELECT * FROM tb_menu WHERE [kode_menu] = '" + idmakanan + "'";
+            SQLQuery.Connection = database;
+            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(SQLQuery);
+            dataAdapter.Fill(data);
+            foreach (DataRow row in data.Rows)
+            {
+                kode.Text = row["kode_menu"].ToString();
+                nama.Text = row["nama_menu"].ToString();
+                harga.Text = row["harga"].ToString();
+                tanggal.Text = row["tanggal"].ToString();
+                textBox2.Text = row["keterangan"].ToString();
+            }
+            //kode.Text = ketik;
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string kode;
+            kode = textBox1.Text;
+            cari(kode);
+        }
+
     }
 }
