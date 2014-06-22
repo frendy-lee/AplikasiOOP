@@ -57,7 +57,6 @@ namespace Aplikasi_Transaksi_Penjualan
                 Array.Resize(ref option, option.Length + 1);
                 option[option.GetUpperBound(0)] = row[0].ToString() + "-" + row[1].ToString();
             }
-
             selectkegiatan.DataSource = option;
         }
 
