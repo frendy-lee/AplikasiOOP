@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.labeldate = new System.Windows.Forms.Label();
-            this.labeltime = new System.Windows.Forms.Label();
             this.groupBoxcari = new System.Windows.Forms.GroupBox();
             this.buttonhistory = new System.Windows.Forms.Button();
             this.labelkegiatan = new System.Windows.Forms.Label();
@@ -44,31 +42,13 @@
             this.groupBoxhistory = new System.Windows.Forms.GroupBox();
             this.datagridhistory = new System.Windows.Forms.DataGridView();
             this.buttonkembali = new System.Windows.Forms.Button();
+            this.labeldate = new System.Windows.Forms.Label();
+            this.labeltime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBoxcari.SuspendLayout();
             this.groupBoxhistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridhistory)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labeldate
-            // 
-            this.labeldate.AutoSize = true;
-            this.labeldate.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeldate.Location = new System.Drawing.Point(31, 25);
-            this.labeldate.Name = "labeldate";
-            this.labeldate.Size = new System.Drawing.Size(62, 20);
-            this.labeldate.TabIndex = 1;
-            this.labeldate.Text = "Tanggal :";
-            // 
-            // labeltime
-            // 
-            this.labeltime.AutoSize = true;
-            this.labeltime.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeltime.Location = new System.Drawing.Point(552, 25);
-            this.labeltime.Name = "labeltime";
-            this.labeltime.Size = new System.Drawing.Size(49, 20);
-            this.labeltime.TabIndex = 2;
-            this.labeltime.Text = "Waktu :";
             // 
             // groupBoxcari
             // 
@@ -138,7 +118,6 @@
             // selectkegiatan
             // 
             this.selectkegiatan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.selectkegiatan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.selectkegiatan.FormattingEnabled = true;
             this.selectkegiatan.Location = new System.Drawing.Point(447, 27);
             this.selectkegiatan.Name = "selectkegiatan";
@@ -156,11 +135,11 @@
             // 
             this.labelsd.AutoSize = true;
             this.labelsd.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelsd.Location = new System.Drawing.Point(360, 64);
+            this.labelsd.Location = new System.Drawing.Point(361, 64);
             this.labelsd.Name = "labelsd";
-            this.labelsd.Size = new System.Drawing.Size(28, 20);
+            this.labelsd.Size = new System.Drawing.Size(50,20);
             this.labelsd.TabIndex = 6;
-            this.labelsd.Text = "s.d.";
+            this.labelsd.Text = "s/d";
             // 
             // labeltanggal
             // 
@@ -205,6 +184,26 @@
             this.buttonkembali.Text = "Kembali";
             this.buttonkembali.UseVisualStyleBackColor = false;
             this.buttonkembali.Click += new System.EventHandler(this.buttonkembali_Click);
+            // 
+            // labeldate
+            // 
+            this.labeldate.AutoSize = true;
+            this.labeldate.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeldate.Location = new System.Drawing.Point(31, 25);
+            this.labeldate.Name = "labeldate";
+            this.labeldate.Size = new System.Drawing.Size(62, 20);
+            this.labeldate.TabIndex = 1;
+            this.labeldate.Text = "Tanggal :";
+            // 
+            // labeltime
+            // 
+            this.labeltime.AutoSize = true;
+            this.labeltime.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeltime.Location = new System.Drawing.Point(552, 25);
+            this.labeltime.Name = "labeltime";
+            this.labeltime.Size = new System.Drawing.Size(49, 20);
+            this.labeltime.TabIndex = 2;
+            this.labeltime.Text = "Waktu :";
             // 
             // FrHistory
             // 
