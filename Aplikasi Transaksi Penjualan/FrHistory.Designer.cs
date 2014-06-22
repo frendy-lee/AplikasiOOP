@@ -45,9 +45,6 @@
             this.datagridhistory = new System.Windows.Forms.DataGridView();
             this.buttonkembali = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.tanggal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kegiatan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxcari.SuspendLayout();
             this.groupBoxhistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridhistory)).BeginInit();
@@ -190,10 +187,6 @@
             // 
             this.datagridhistory.AllowUserToAddRows = false;
             this.datagridhistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datagridhistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tanggal,
-            this.userID,
-            this.kegiatan});
             this.datagridhistory.Location = new System.Drawing.Point(33, 40);
             this.datagridhistory.Name = "datagridhistory";
             this.datagridhistory.Size = new System.Drawing.Size(613, 374);
@@ -212,21 +205,6 @@
             this.buttonkembali.Text = "Kembali";
             this.buttonkembali.UseVisualStyleBackColor = false;
             this.buttonkembali.Click += new System.EventHandler(this.buttonkembali_Click);
-            // 
-            // tanggal
-            // 
-            this.tanggal.HeaderText = "Tanggal";
-            this.tanggal.Name = "tanggal";
-            // 
-            // userID
-            // 
-            this.userID.HeaderText = "User ID";
-            this.userID.Name = "userID";
-            // 
-            // kegiatan
-            // 
-            this.kegiatan.HeaderText = "Kegiatan";
-            this.kegiatan.Name = "kegiatan";
             // 
             // FrHistory
             // 
@@ -270,8 +248,5 @@
         private System.Windows.Forms.Button buttonkembali;
         private System.Windows.Forms.DataGridView datagridhistory;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tanggal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kegiatan;
     }
 }

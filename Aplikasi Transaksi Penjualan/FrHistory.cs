@@ -15,18 +15,6 @@ namespace Aplikasi_Transaksi_Penjualan
 {
     public partial class FrHistory : Form
     {
-        public class menu_selected
-        {
-            public string userID { private set; get; }
-            public string keg { private set; get; }
-
-            public menu_selected(string userID, string keg)
-            {
-                this.userID = userID;
-                this.keg = keg;
-            }
-        }
-
         OleDbConnection database;
         ArrayList select;
 
@@ -81,11 +69,6 @@ namespace Aplikasi_Transaksi_Penjualan
             datagridhistory.DataSource = select;
             datagridhistory.AllowUserToAddRows = false;
             datagridhistory.ReadOnly = true;
-
-            datagridhistory.Columns[0].Width = 100;
-            datagridhistory.Columns[1].Width = 200;
-            datagridhistory.Columns[2].Width = 200;
-            datagridhistory.Columns[2].Width = 200;
         }
 
         private void buttonkembali_Click(object sender, EventArgs e)
@@ -96,7 +79,7 @@ namespace Aplikasi_Transaksi_Penjualan
         private void buttonhistory_Click(object sender, EventArgs e)
         {
             string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=../../Dbase/TP.mdb";
-            string sql = "SELECT  FROM tb_kegiatan";
+            string sql = "SELECT id_user, kd_kegiatan, waktu FROM tb_history";
             OleDbConnection connection = new OleDbConnection(connectionString);
             OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sql, connection);
             DataSet dataset = new DataSet();
