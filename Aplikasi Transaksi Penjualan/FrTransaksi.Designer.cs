@@ -89,7 +89,7 @@
             // 
             this.waktu.AutoSize = true;
             this.waktu.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.waktu.Location = new System.Drawing.Point(639, 13);
+            this.waktu.Location = new System.Drawing.Point(640, 15);
             this.waktu.Name = "waktu";
             this.waktu.Size = new System.Drawing.Size(0, 20);
             this.waktu.TabIndex = 3;
@@ -377,6 +377,7 @@
             // timer1
             // 
             this.timer1.Interval = 95;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // FrTransaksi
             // 
