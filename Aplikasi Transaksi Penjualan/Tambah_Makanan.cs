@@ -43,16 +43,16 @@ namespace Aplikasi_Transaksi_Penjualan
         
         ArrayList slect1;
 
-        public bool savemakanan(string idmakanan, string namamakanan, int hargamakanan, DateTime tanggal, string keterangan)
+        public void savemakanan(string idmakanan, string namamakanan, int hargamakanan, DateTime tanggal, string keterangan)
         {
             string queryInsertUser = "INSERT INTO tb_menu([kode_menu],[nama_menu],[harga],[tanggal],[keterangan]) VALUES('" + idmakanan + "','" + namamakanan + "','" + int.Parse(hargamakanan.ToString()) + "','"+ tanggal +"','" + keterangan + "')";
             OleDbCommand SQLInsert = new OleDbCommand(queryInsertUser, database);
             int result = SQLInsert.ExecuteNonQuery();
-            MessageBox.Show(result.ToString());
+            
             if (result == 1)
-                return true;
+                MessageBox.Show("Berhasil Disimpan");
             else
-                return false;
+                MessageBox.Show("Gagal Disimpan");
              
         }
         private void Tambah_Makanan_Load(object sender, EventArgs e)
