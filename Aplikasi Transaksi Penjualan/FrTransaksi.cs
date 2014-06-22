@@ -137,7 +137,6 @@ namespace Aplikasi_Transaksi_Penjualan
             CultureInfo culture = new CultureInfo("id-ID");
             DateTime sekarang;
             sekarang = DateTime.Now;
-
             tanggal.Text = sekarang.ToString("dddd, dd-MMMM-yyyy", culture);
             timer1.Enabled = true;
             loadComboBox();
@@ -220,25 +219,12 @@ namespace Aplikasi_Transaksi_Penjualan
             txtkembali.Text = kembali.ToString();
         }
 
-        private void Simpan_Click(object sender, EventArgs e)
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void selectmenu_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            waktu.Text = DateTime.Now.ToString("hh:mm:ss");
+            DateTime sekarang;
+            sekarang = DateTime.Now;
+            waktu.Text = sekarang.ToString("HH:mm:ss");
             waktu.Font = new Font("DS-Digital", 16, FontStyle.Bold);
-        }
-
-        private void lbltanggal_Click(object sender, EventArgs e)
-        {
-
         }
 
     }

@@ -74,7 +74,6 @@
             this.lbltanggal.Size = new System.Drawing.Size(56, 20);
             this.lbltanggal.TabIndex = 0;
             this.lbltanggal.Text = "Tanggal";
-            this.lbltanggal.Click += new System.EventHandler(this.lbltanggal_Click);
             // 
             // tanggal
             // 
@@ -220,7 +219,6 @@
             this.selectmenu.Name = "selectmenu";
             this.selectmenu.Size = new System.Drawing.Size(121, 21);
             this.selectmenu.TabIndex = 10;
-            this.selectmenu.SelectedIndexChanged += new System.EventHandler(this.selectmenu_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -372,11 +370,10 @@
             this.Simpan.TabIndex = 25;
             this.Simpan.Text = "&SIMPAN";
             this.Simpan.UseVisualStyleBackColor = false;
-            this.Simpan.Click += new System.EventHandler(this.Simpan_Click);
             // 
             // timer1
             // 
-            this.timer1.Interval = 95;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // FrTransaksi
             // 
