@@ -139,6 +139,7 @@ namespace Aplikasi_Transaksi_Penjualan
             sekarang = DateTime.Now;
 
             tanggal.Text = sekarang.ToString("dddd, dd-MMMM-yyyy", culture);
+            waktu.Text = DateTime.Now.ToString("hh:mm:ss");
             timer1.Enabled = true;
             loadComboBox();
         }
@@ -222,7 +223,61 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void Simpan_Click(object sender, EventArgs e)
         {
+            string no_kwitansi = new_no_kwitansi();
+            DateTime sekarang=  DateTime.Now;            
+            string tgl = sekarang.ToString("dd/MMMM/yyyy");
+            string waktu = sekarang.ToString("hh:mm:ss");
+            int subtotal = int.Parse(txtstotal.Text);
+            int nilaipajak = int.Parse(txtpajak.Text);
+            int total = int.Parse(txttotal.Text);
+            int bayar = int.Parse(txtbayar.Text);
+            string kodemember = kode_member.Text;
+            
+            string queryInsertUser = "INSERT INTO tb_transaksi([no_kwitansi],[id_user],[kode_member],[tanggal],[waktu],[subtotal],[nilai_pajak],[total],[bayar])  VALUES('" + no_kwitansi + "','12123','" + kodemember + "','"+tgl+"','"+waktu+"',"+subtotal+","+nilaipajak+","+total+","+bayar+")";
+            OleDbCommand SQLInsert = new OleDbCommand(queryInsertUser, database);
+            int result = SQLInsert.ExecuteNonQuery();            
+            if (result == 1)
+                MessageBox.Show(result.ToString());
+            else
+                MessageBox.Show(result.ToString());
+        }
 
+        public string new_no_kwitansi()
+        {
+            string last_kwitansi;
+            string new_kwitansi = "";
+            string year = DateTime.Now.Year.ToString();
+            OleDbCommand SQLQuery = new OleDbCommand();
+            DataTable data2 = new DataTable();
+            SQLQuery.CommandText = "SELECT no_kwitansi FROM tb_transaksi order by id_transaksi desc ";
+            SQLQuery.Connection = database;
+            OleDbDataAdapter dataAdapter2 = new OleDbDataAdapter(SQLQuery);
+            dataAdapter2.Fill(data2);
+
+            if (data2.Rows.Count > 0)
+            {
+                last_kwitansi = data2.Rows[0]["no_kwitansi"].ToString();
+                string last_year = last_kwitansi.Substring(0,4);
+                string last_number = last_kwitansi.Substring(5);
+                if (int.Parse(last_year) < int.Parse(year))
+                {
+                    new_kwitansi = year + "|" + 0;
+                }
+                else if (int.Parse(last_year) == int.Parse(year))
+                {
+                    new_kwitansi = year + "|" + (int.Parse(last_number) + 1);
+                }
+                else
+                {
+                    new_kwitansi = year + "|" + 0;
+                }
+            }
+            else
+            {
+                new_kwitansi = year + "|" + 0;
+            }
+
+            return new_kwitansi;
         }
 
         private void selectmenu_SelectedIndexChanged(object sender, EventArgs e)
@@ -232,13 +287,18 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            waktu.Text = DateTime.Now.ToString("hh:mm:ss");
-            waktu.Font = new Font("DS-Digital", 16, FontStyle.Bold);
+            
         }
 
         private void lbltanggal_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            waktu.Text = DateTime.Now.ToString("hh:mm:ss");
+            waktu.Font = new Font("DS-Digital", 10, FontStyle.Bold);
         }
 
     }
