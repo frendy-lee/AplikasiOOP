@@ -40,8 +40,6 @@ namespace Aplikasi_Transaksi_Penjualan
                 return;
             }
         }
-        
-        ArrayList slect1;
 
         public void savemakanan(string idmakanan, string namamakanan, int hargamakanan, DateTime tanggal, string keterangan)
         {
