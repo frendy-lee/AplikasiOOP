@@ -19,6 +19,17 @@ namespace Aplikasi_Transaksi_Penjualan
         public Menu_Makanan()
         {
             InitializeComponent();
+            string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=../../Dbase/TP.mdb";
+            try
+            {
+                database = new OleDbConnection(connectionString);
+                database.Open();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,24 +38,53 @@ namespace Aplikasi_Transaksi_Penjualan
             tm.Show();
             Close();
         }
-        public void show()
+        public void Loadlist()
         {
             string[] option = new string[0];
             OleDbCommand SQLQuery = new OleDbCommand();
             DataTable data = new DataTable();
-            SQLQuery.CommandText = "SELECT kode_menu,nama_menu FROM tb_menu";
+            SQLQuery.CommandText = "SELECT kode_menu FROM tb_menu";
             SQLQuery.Connection = database;
             OleDbDataAdapter dataAdapter = new OleDbDataAdapter(SQLQuery);
             dataAdapter.Fill(data);
             foreach (DataRow row in data.Rows)
             {
                 Array.Resize(ref option, option.Length + 1);
-                option[option.GetUpperBound(0)] = row[0].ToString() + "-" + row[1].ToString();
+                option[option.GetUpperBound(0)] = row[0].ToString();
             }
             for (int i = 0; i < option.Length; i++)
             {
-
+                listBox1.Items.Add(option[i]);
             }
+        }
+
+        private void listBox1_SelectedValueChanged_1(object sender, EventArgs e)
+        {
+            string pilih = listBox1.GetItemText(listBox1.SelectedItem);
+            OleDbCommand SQLQuery = new OleDbCommand();
+            DataTable data = new DataTable();
+            SQLQuery.CommandText = "SELECT * FROM tb_menu WHERE [kode_menu] = '" + pilih + "'";
+            SQLQuery.Connection = database;
+            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(SQLQuery);
+            dataAdapter.Fill(data);
+            foreach (DataRow row in data.Rows)
+            {
+                nama.Text = row["nama_menu"].ToString();
+                harga.Text = row["harga"].ToString();
+                tanggal.Text = row["tanggal"].ToString();
+                textBox2.Text = row["keterangan"].ToString();
+            }
+            kode.Text = pilih;
+        }
+
+        private void Menu_Makanan_Load(object sender, EventArgs e)
+        {
+            Loadlist();
+        }
+
+        private void keterangan_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

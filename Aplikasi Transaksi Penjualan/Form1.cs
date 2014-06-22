@@ -53,8 +53,10 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void button3_Click(object sender, EventArgs e)
         {
-            registUser reg = new registUser();
-            reg.Show();
+            Member member = new Member();
+            member.Show();
+            //registUser reg = new registUser();
+            //reg.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)

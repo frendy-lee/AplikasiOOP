@@ -182,6 +182,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tambah_Makanan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tambah_Makanan";
             this.Load += new System.EventHandler(this.Tambah_Makanan_Load);
             this.ResumeLayout(false);
