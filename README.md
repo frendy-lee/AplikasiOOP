@@ -1,6 +1,8 @@
 AplikasiOOP
 ===========
 
+TOLONG TUTUP APLIKASI VISUAL STUDIO DAN ACCESS SEBELUM MELAKUKAN PUSH!!!
+
 Aplikasi Transaksi Penjualan Tugas OOP
 
 Ini merupakan repo untuk tugas Project Pelajaran Object Oriented Programming.
