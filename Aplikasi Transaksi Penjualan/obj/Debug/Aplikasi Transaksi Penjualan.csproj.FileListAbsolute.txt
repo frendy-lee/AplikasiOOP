@@ -40,3 +40,4 @@ D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\AplikasiOOP\Aplikasi Transaksi P
 D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csproj.GenerateResource.Cache
 D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.exe
 D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.pdb
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csprojResolveAssemblyReference.cache
