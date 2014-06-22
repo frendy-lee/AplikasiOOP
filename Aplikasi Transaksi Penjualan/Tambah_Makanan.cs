@@ -73,7 +73,6 @@ namespace Aplikasi_Transaksi_Penjualan
             }
             mm.Show();
             Close();
-            slect1.Add(new tambahmakanan(s1.ToString(), s2.ToString(), int.Parse(s3.ToString()), int.Parse(s5.ToString()),sekarang, s6.ToString()));
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
