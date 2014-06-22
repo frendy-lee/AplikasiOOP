@@ -12,11 +12,11 @@ using System.Security.Cryptography;
 
 namespace Aplikasi_Transaksi_Penjualan
 {
-    public partial class registUser : Form
+    public partial class Login : Form
     {
         OleDbConnection database;
 
-        public registUser()
+        public Login()
         {            
             InitializeComponent();
             //initiate DB connection
@@ -36,28 +36,23 @@ namespace Aplikasi_Transaksi_Penjualan
         private void add_Click(object sender, EventArgs e)
         {
             string usrname = username.Text;
-            string lgnname = loginname.Text;
             string pass = MD5Hash(password.Text);
 
-            if (saveUser(usrname, lgnname, pass))
+            if (saveUser(usrname, pass))
             {
                 username.Text = "";
-                loginname.Text = "";
                 password.Text = "";
                 username.Focus();
             }
         }
 
-        public bool saveUser(string username, string loginname, string password)
+        public void SecurityUser(string username,string password)
         {
-            string queryInsertUser = "INSERT INTO tb_user([username],[loginname],[password]) VALUES('"+username+"','"+loginname+"','"+password+"')";
-            OleDbCommand SQLInsert = new OleDbCommand(queryInsertUser,database);
-            int result = SQLInsert.ExecuteNonQuery();
-            MessageBox.Show(result.ToString());
-            if (result == 1)            
-                return true;            
-            else
-                return false;            
+            OleDbCommand SQLQuery = new OleDbCommand();
+            DataTable datauser = new DataTable();
+            SQLQuery.CommandText = "SELECT username,password FROM tb_user order by id_user desc ";
+            SQLQuery.Connection = database;
+            
         }
 
         public static string MD5Hash(string text)
@@ -81,25 +76,9 @@ namespace Aplikasi_Transaksi_Penjualan
             return strBuilder.ToString();
         }
 
-        private void close_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
-            
+
         }
     }
 }
