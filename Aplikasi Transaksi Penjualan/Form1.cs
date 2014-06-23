@@ -59,7 +59,9 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
+            FrmLogin frm = new FrmLogin();
+            frm.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
