@@ -38,16 +38,17 @@ namespace Aplikasi_Transaksi_Penjualan
                 return;
             }
         }
-        public bool saveMember(string kodeMember, string namaMember,DateTime tglDaftarMember,string noKTPMember, string alamatMember )
+        public void saveMember(string kodeMember, string namaMember,DateTime tglDaftarMember,string noKTPMember, string alamatMember )
         {
             string queryInsertUser = "INSERT INTO tb_member([kode_member],[nama_member],[tanggal_daftar],[no_ktp],[alamat]) VALUES('" + kodeMember + "','" + namaMember + "','" + tglDaftarMember+ "','" + noKTPMember + "','" + alamatMember+ "')";
             OleDbCommand SQLInsert = new OleDbCommand(queryInsertUser, database7);
             int result = SQLInsert.ExecuteNonQuery();
-            MessageBox.Show(result.ToString());
             if (result == 1)
-                return true;
+            {
+                MessageBox.Show("berhasil");
+            }
             else
-                return false;
+                MessageBox.Show("gagal");
         }
         private void nama_TextChanged(object sender, EventArgs e)
         {

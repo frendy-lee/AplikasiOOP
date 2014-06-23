@@ -160,9 +160,10 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string kode;
-            kode = textBox1.Text;
-            cari(kode);
+            string kodeM;
+            kodeM = textBox1.Text;
+            cari(kodeM);
+           
         }
         public void deleteMember(string kode)
         {
@@ -185,7 +186,13 @@ namespace Aplikasi_Transaksi_Penjualan
             {
                 kodeM= kode.Text;
                 deleteMember(kodeM);
+                lblnama.Text = "";
+                alamat.Text = "";
+                tglDaftar.Text = "";
+                noKTP.Text = "";
+                kode.Text = "";
             }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)

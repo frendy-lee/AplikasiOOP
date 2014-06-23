@@ -120,9 +120,8 @@
             this.alamat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alamat.Location = new System.Drawing.Point(239, 337);
             this.alamat.Name = "alamat";
-            this.alamat.Size = new System.Drawing.Size(70, 25);
+            this.alamat.Size = new System.Drawing.Size(0, 25);
             this.alamat.TabIndex = 9;
-            this.alamat.Text = "label5";
             // 
             // noKTP
             // 
@@ -130,9 +129,8 @@
             this.noKTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noKTP.Location = new System.Drawing.Point(239, 264);
             this.noKTP.Name = "noKTP";
-            this.noKTP.Size = new System.Drawing.Size(70, 25);
+            this.noKTP.Size = new System.Drawing.Size(0, 25);
             this.noKTP.TabIndex = 8;
-            this.noKTP.Text = "label4";
             // 
             // tglDaftar
             // 
@@ -140,9 +138,8 @@
             this.tglDaftar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tglDaftar.Location = new System.Drawing.Point(239, 190);
             this.tglDaftar.Name = "tglDaftar";
-            this.tglDaftar.Size = new System.Drawing.Size(70, 25);
+            this.tglDaftar.Size = new System.Drawing.Size(0, 25);
             this.tglDaftar.TabIndex = 7;
-            this.tglDaftar.Text = "label3";
             // 
             // lblnama
             // 
@@ -150,9 +147,8 @@
             this.lblnama.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnama.Location = new System.Drawing.Point(239, 117);
             this.lblnama.Name = "lblnama";
-            this.lblnama.Size = new System.Drawing.Size(70, 25);
+            this.lblnama.Size = new System.Drawing.Size(0, 25);
             this.lblnama.TabIndex = 6;
-            this.lblnama.Text = "label2";
             // 
             // kode
             // 
@@ -160,9 +156,8 @@
             this.kode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kode.Location = new System.Drawing.Point(239, 53);
             this.kode.Name = "kode";
-            this.kode.Size = new System.Drawing.Size(70, 25);
+            this.kode.Size = new System.Drawing.Size(0, 25);
             this.kode.TabIndex = 5;
-            this.kode.Text = "label1";
             // 
             // label6
             // 

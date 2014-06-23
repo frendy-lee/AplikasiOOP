@@ -94,7 +94,9 @@
     <Compile Include="registUser.Designer.cs">
       <DependentUpon>registUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="TambahMember.cs" />
+    <Compile Include="TambahMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TambahMember.designer.cs">
       <DependentUpon>TambahMember.cs</DependentUpon>
     </Compile>
