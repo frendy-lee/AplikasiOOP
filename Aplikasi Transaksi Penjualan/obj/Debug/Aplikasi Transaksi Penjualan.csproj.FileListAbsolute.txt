@@ -75,3 +75,4 @@ D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\Project\AplikasiOOP\Aplikasi Tra
 D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi Transaksi Penjualan.csprojResolveAssemblyReference.cache
 D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.Member.resources
 D:\KULIAH\SEMESTER 4\PEMROGRAMAN BERBASIS OBJEK\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.TambahMember.resources
+D:\Kuliah\SEMESTER 4\Pemrograman Berbasis objek\AplikasiOOP\Aplikasi Transaksi Penjualan\obj\Debug\Aplikasi_Transaksi_Penjualan.FrmLogin.resources
