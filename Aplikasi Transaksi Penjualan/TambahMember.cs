@@ -78,6 +78,7 @@ namespace Aplikasi_Transaksi_Penjualan
             Member memberform = new Member();
             memberform.Show();
             Close();
+
         }
 
         private void TambahMember_Load(object sender, EventArgs e)
