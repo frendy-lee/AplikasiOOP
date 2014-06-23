@@ -61,6 +61,7 @@
             this.txtkembali = new System.Windows.Forms.TextBox();
             this.Simpan = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jumlahUpDown)).BeginInit();
             this.SuspendLayout();
@@ -379,12 +380,27 @@
             this.timer1.Interval = 95;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Cornsilk;
+            this.button1.Location = new System.Drawing.Point(324, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 22);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "LOGOUT";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(750, 750);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Simpan);
             this.Controls.Add(this.txtkembali);
             this.Controls.Add(this.txtbayar);
@@ -456,5 +472,6 @@
          private System.Windows.Forms.TextBox txtkembali;
          private System.Windows.Forms.Button Simpan;
          private System.Windows.Forms.Timer timer1;
+         private System.Windows.Forms.Button button1;
      }
  }

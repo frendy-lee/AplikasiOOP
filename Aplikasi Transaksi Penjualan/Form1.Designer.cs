@@ -120,12 +120,13 @@
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.Font = new System.Drawing.Font("Chiller", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Crimson;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button5.Location = new System.Drawing.Point(637, 0);
+            this.button5.Image = global::Aplikasi_Transaksi_Penjualan.Properties.Resources.Untitled;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(622, 0);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(113, 35);
+            this.button5.Size = new System.Drawing.Size(128, 35);
             this.button5.TabIndex = 11;
-            this.button5.Text = "  Keluar";
+            this.button5.Text = "  LOGOUT";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
