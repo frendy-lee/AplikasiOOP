@@ -36,8 +36,9 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblarrow = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,6 +70,7 @@
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Text = "PASSWORD";
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // label3
             // 
@@ -87,6 +89,7 @@
             this.txtUsername.Size = new System.Drawing.Size(182, 21);
             this.txtUsername.TabIndex = 0;
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // label4
             // 
@@ -116,6 +119,22 @@
             this.btnLogin.UseWaitCursor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblarrow
+            // 
+            this.lblarrow.BackColor = System.Drawing.Color.Cyan;
+            this.lblarrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblarrow.Image = global::Aplikasi_Transaksi_Penjualan.Properties.Resources.arrow;
+            this.lblarrow.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblarrow.Location = new System.Drawing.Point(119, 284);
+            this.lblarrow.Name = "lblarrow";
+            this.lblarrow.Size = new System.Drawing.Size(120, 27);
+            this.lblarrow.TabIndex = 15;
+            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.DarkOrange;
@@ -132,16 +151,12 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 1500;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // FrmLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(750, 700);
+            this.Controls.Add(this.lblarrow);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
@@ -174,5 +189,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblarrow;
     }
 }

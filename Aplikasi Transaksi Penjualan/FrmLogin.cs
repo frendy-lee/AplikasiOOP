@@ -25,12 +25,14 @@ namespace Aplikasi_Transaksi_Penjualan
             txtUsername.Text = "";
             if (txtPassword.Text == "")
                 txtPassword.Text = "Password";
+            lblarrow.Location = new Point(119, 284);
         }
         private void txtPassword_Click(object sender, EventArgs e)
         {
             txtPassword.Text = "";
             if (txtUsername.Text == "")
                 txtUsername.Text = "USERNAME";
+            lblarrow.Location = new Point(119, 333);
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
@@ -54,7 +56,7 @@ namespace Aplikasi_Transaksi_Penjualan
                     {
                         nm = rdr[1].ToString();
                         pas = rdr[3].ToString();
-                        MessageBox.Show("UserName dan Password Sudah Benar....", "Informasi" + MessageBoxIcon.Information);
+                        MessageBox.Show("UserName dan Password Sudah Benar....", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                         if (nm == "tiasore" && pas == "tiasore2012")
                         {
                             FrTransaksi tran = new FrTransaksi();
@@ -74,8 +76,8 @@ namespace Aplikasi_Transaksi_Penjualan
                         txtUsername.Text = "";
                         txtUsername.Focus();
                         txtPassword.Text = "";
-                        MessageBox.Show("Username atau Password Salah........ !", "Informasi" + MessageBoxIcon.Information);
-                        
+                        MessageBox.Show("Username atau Password Salah........ !", "Informasi" , MessageBoxButtons.OK, MessageBoxIcon.Information , MessageBoxDefaultButton.Button1);
+                        lblarrow.Location = new Point(119, 284);
                     }
 
                     conn.Close();
@@ -83,7 +85,8 @@ namespace Aplikasi_Transaksi_Penjualan
             }
             else
             {
-                MessageBox.Show("Maaf, Lengkapinya terlebih dahulu..!!!" + MessageBoxIcon.Information, "Informasi");
+                MessageBox.Show("Maaf, Lengkapi Username dan Password terlebih dahulu..!!!", "Informasi" , MessageBoxButtons.OK, MessageBoxIcon.Information , MessageBoxDefaultButton.Button1);
+                lblarrow.Location = new Point(119, 284);
             } 
         }
 
@@ -94,16 +97,21 @@ namespace Aplikasi_Transaksi_Penjualan
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (label4.Visible == true | label3.Visible == true)
-            {
-                label3.Visible = false;
-                label4.Visible = false;
-            }
+            if (lblarrow.Visible == true)
+                lblarrow.Visible = false;
             else
-            {
-                label3.Visible = true;
-                label4.Visible = true;
-            }
+                lblarrow.Visible = true;
+        }
+
+        
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            lblarrow.Location = new Point(119, 333);
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            lblarrow.Location = new Point(119, 284);
         }
 
     }

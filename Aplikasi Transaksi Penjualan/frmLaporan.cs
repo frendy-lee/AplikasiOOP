@@ -42,9 +42,6 @@ namespace Aplikasi_Transaksi_Penjualan
         private void btnHarian_Click(object sender, EventArgs e)
         {
             int a = dateTimePicker1.Value.Day;
-            btnHarian.Location = new Point(154, 146);
-            btnBulanan.Location = new Point(456, 146);
-            btnTahunan.Location = new Point(299, 305);
             timer3.Enabled = true;
             OleDbCommand SQLQuery = new OleDbCommand();
             SQLQuery.CommandText = "Select [id_user], [kode_member], tanggal , [total] from tb_transaksi WHERE '" + a + "' = DATEPART('d', tanggal)";
@@ -59,9 +56,6 @@ namespace Aplikasi_Transaksi_Penjualan
         private void btnTahunan_Click(object sender, EventArgs e)
         {
             int a = dateTimePicker1.Value.Year;
-            btnHarian.Location = new Point(154, 146);
-            btnBulanan.Location = new Point(456, 146);
-            btnTahunan.Location = new Point(299, 305);
             timer3.Enabled = true;
             OleDbCommand SQLQuery = new OleDbCommand();
             SQLQuery.CommandText = "Select [id_user], [kode_member], tanggal, [total] from tb_transaksi WHERE '" + a + "' = DatePart('yyyy', tanggal)";
@@ -75,9 +69,6 @@ namespace Aplikasi_Transaksi_Penjualan
         private void btnBulanan_Click(object sender, EventArgs e)
         {
             int a = dateTimePicker1.Value.Month;
-            btnHarian.Location = new Point(154, 146);
-            btnBulanan.Location = new Point(456, 146);
-            btnTahunan.Location = new Point(299, 305);
             timer3.Enabled = true;
             OleDbCommand SQLQuery = new OleDbCommand();
             SQLQuery.CommandText = "Select [id_user], [kode_member], tanggal, [total] from tb_transaksi WHERE '" + a + "' = DatePart('m', tanggal)";
@@ -106,23 +97,17 @@ namespace Aplikasi_Transaksi_Penjualan
                 }
                 else
                 {
-                    btnBulanan.Location = new Point(btnBulanan.Location.X - 3, 200);
-                    btnTahunan.Location = new Point(btnTahunan.Location.X - 2, 300);
+                    btnBulanan.Location = new Point(btnBulanan.Location.X - 4, 300);
+                    btnTahunan.Location = new Point(btnTahunan.Location.X - 2, 400);
                 }
             }
             else
             {
-                btnHarian.Location = new Point(btnHarian.Location.X - 2, 100);
-                btnBulanan.Location = new Point(btnBulanan.Location.X - 2, 200);
-                btnTahunan.Location = new Point(btnTahunan.Location.X - 1, 300);
+                btnHarian.Location = new Point(btnHarian.Location.X - 2, 200);
+                btnBulanan.Location = new Point(btnBulanan.Location.X - 2, 300);
+                btnTahunan.Location = new Point(btnTahunan.Location.X - 2, 400);
             }
             dataGridView1.Visible = true;
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
     }
 }
