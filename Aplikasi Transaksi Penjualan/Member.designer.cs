@@ -43,6 +43,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,10 +87,9 @@
             this.listBox1.Location = new System.Drawing.Point(29, 126);
             this.listBox1.Margin = new System.Windows.Forms.Padding(0, 6, 0, 6);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(209, 407);
+            this.listBox1.Size = new System.Drawing.Size(209, 589);
             this.listBox1.TabIndex = 3;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            this.listBox1.SelectedValueChanged += new System.EventHandler(this.listBox1_SelectedValueChanged_1);
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedValueChanged_1);
             // 
             // groupBox1
             // 
@@ -107,7 +108,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0, 6, 0, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 6);
-            this.groupBox1.Size = new System.Drawing.Size(433, 416);
+            this.groupBox1.Size = new System.Drawing.Size(461, 601);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detail";
@@ -119,9 +120,8 @@
             this.alamat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alamat.Location = new System.Drawing.Point(239, 337);
             this.alamat.Name = "alamat";
-            this.alamat.Size = new System.Drawing.Size(70, 25);
+            this.alamat.Size = new System.Drawing.Size(0, 25);
             this.alamat.TabIndex = 9;
-            this.alamat.Text = "label5";
             // 
             // noKTP
             // 
@@ -129,9 +129,8 @@
             this.noKTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noKTP.Location = new System.Drawing.Point(239, 264);
             this.noKTP.Name = "noKTP";
-            this.noKTP.Size = new System.Drawing.Size(70, 25);
+            this.noKTP.Size = new System.Drawing.Size(0, 25);
             this.noKTP.TabIndex = 8;
-            this.noKTP.Text = "label4";
             // 
             // tglDaftar
             // 
@@ -139,9 +138,8 @@
             this.tglDaftar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tglDaftar.Location = new System.Drawing.Point(239, 190);
             this.tglDaftar.Name = "tglDaftar";
-            this.tglDaftar.Size = new System.Drawing.Size(70, 25);
+            this.tglDaftar.Size = new System.Drawing.Size(0, 25);
             this.tglDaftar.TabIndex = 7;
-            this.tglDaftar.Text = "label3";
             // 
             // lblnama
             // 
@@ -149,9 +147,8 @@
             this.lblnama.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnama.Location = new System.Drawing.Point(239, 117);
             this.lblnama.Name = "lblnama";
-            this.lblnama.Size = new System.Drawing.Size(70, 25);
+            this.lblnama.Size = new System.Drawing.Size(0, 25);
             this.lblnama.TabIndex = 6;
-            this.lblnama.Text = "label2";
             // 
             // kode
             // 
@@ -159,9 +156,8 @@
             this.kode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kode.Location = new System.Drawing.Point(239, 53);
             this.kode.Name = "kode";
-            this.kode.Size = new System.Drawing.Size(70, 25);
+            this.kode.Size = new System.Drawing.Size(0, 25);
             this.kode.TabIndex = 5;
-            this.kode.Text = "label1";
             // 
             // label6
             // 
@@ -213,12 +209,38 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Kode";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.button2.Location = new System.Drawing.Point(104, 62);
+            this.button2.Margin = new System.Windows.Forms.Padding(0, 6, 0, 6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(46, 45);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "-";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.button3.Location = new System.Drawing.Point(29, 5);
+            this.button3.Margin = new System.Windows.Forms.Padding(0, 6, 0, 6);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(76, 45);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Back";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Member
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(750, 750);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
@@ -256,5 +278,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
