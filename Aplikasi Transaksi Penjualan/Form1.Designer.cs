@@ -32,7 +32,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -89,29 +88,13 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FloralWhite;
-            this.button3.Location = new System.Drawing.Point(64, 412);
+            this.button3.Location = new System.Drawing.Point(230, 409);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(280, 280);
             this.button3.TabIndex = 3;
             this.button3.Text = "Member";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(19)))), ((int)(((byte)(89)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Courier New", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FloralWhite;
-            this.button4.Location = new System.Drawing.Point(409, 412);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(280, 280);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "History";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -137,7 +120,6 @@
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(750, 750);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -162,7 +144,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
     }
 }

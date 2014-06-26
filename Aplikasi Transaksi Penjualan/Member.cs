@@ -13,23 +13,13 @@ namespace Aplikasi_Transaksi_Penjualan
 {
     public partial class Member : Form
     {
-
-
-
-        
-
         OleDbConnection database7;
 
         public Member()
-
         {
-
             InitializeComponent();
-
             string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=../../Dbase/TP.mdb";
-
             try
-
             {
 
                 database7 = new OleDbConnection(connectionString);
@@ -96,25 +86,10 @@ namespace Aplikasi_Transaksi_Penjualan
         private void button1_Click(object sender, EventArgs e)
 
         {
-
-
-
             TambahMember tb = new TambahMember();
-
-            
-
             tb.Show(); 
-
             Close();
-
-            
-
         }
-
-
-         
-
-
 
         private void listBox1_SelectedValueChanged_1(object sender, EventArgs e)
         {
@@ -184,7 +159,7 @@ namespace Aplikasi_Transaksi_Penjualan
             string kodeM;
             if (kode.Text != null)
             {
-                kodeM= kode.Text;
+                kodeM = kode.Text;
                 deleteMember(kodeM);
                 lblnama.Text = "";
                 alamat.Text = "";
@@ -202,9 +177,6 @@ namespace Aplikasi_Transaksi_Penjualan
             i.Show();
         }
 
-
-
-        
     }
 
 }
