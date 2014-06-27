@@ -116,6 +116,11 @@ namespace Aplikasi_Transaksi_Penjualan
             {
                 idmakanan = kode.Text;
                 deletemakanan(idmakanan);
+                kode.Text = "";
+                nama.Text = "";
+                harga.Text = "";
+                tanggal.Text = "";
+                textBox2.Text = "";
             }
         }
 
@@ -144,6 +149,5 @@ namespace Aplikasi_Transaksi_Penjualan
             kode = textBox1.Text;
             cari(kode);
         }
-
     }
 }

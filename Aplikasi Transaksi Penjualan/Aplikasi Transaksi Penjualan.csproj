@@ -50,12 +50,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrHistory.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrHistory.Designer.cs">
-      <DependentUpon>FrHistory.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLaporan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,9 +102,6 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrHistory.resx">
-      <DependentUpon>FrHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLaporan.resx">
       <DependentUpon>frmLaporan.cs</DependentUpon>

@@ -37,16 +37,19 @@
             this.btnTahunan = new System.Windows.Forms.Button();
             this.btnHarian = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.DarkOrange;
+            this.button5.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button5.BackgroundImage = global::Aplikasi_Transaksi_Penjualan.Properties.Resources.Untitled;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Crimson;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.button5.Location = new System.Drawing.Point(625, 12);
             this.button5.Name = "button5";
@@ -58,11 +61,12 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkOrange;
+            this.button4.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button4.BackgroundImage = global::Aplikasi_Transaksi_Penjualan.Properties.Resources.Backward_icon2;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Crimson;
             this.button4.Location = new System.Drawing.Point(519, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 35);
@@ -146,9 +150,32 @@
             this.dataGridView1.Location = new System.Drawing.Point(234, 195);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(504, 134);
+            this.dataGridView1.Size = new System.Drawing.Size(504, 365);
             this.dataGridView1.TabIndex = 19;
             this.dataGridView1.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Crimson;
+            this.label1.Location = new System.Drawing.Point(319, 605);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 19);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Total  Per Bulan :";
+            this.label1.Visible = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Maiandra GD", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(455, 597);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(243, 33);
+            this.textBox1.TabIndex = 21;
+            this.textBox1.Visible = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // frmLaporan
             // 
@@ -156,6 +183,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(750, 750);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnBulanan);
             this.Controls.Add(this.btnTahunan);
@@ -169,6 +198,7 @@
             this.Text = "frmLaporan";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -182,5 +212,7 @@
         private System.Windows.Forms.Button btnTahunan;
         private System.Windows.Forms.Button btnHarian;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

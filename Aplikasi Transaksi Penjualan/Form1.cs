@@ -65,11 +65,5 @@ namespace Aplikasi_Transaksi_Penjualan
             FrmLogin frm = new FrmLogin();
             frm.Show();
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            FrHistory his = new FrHistory();
-            his.Show();
-        }
     }
 }

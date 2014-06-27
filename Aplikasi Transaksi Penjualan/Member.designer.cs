@@ -117,46 +117,51 @@
             // alamat
             // 
             this.alamat.AutoSize = true;
-            this.alamat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alamat.Enabled = false;
+            this.alamat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alamat.Location = new System.Drawing.Point(239, 337);
             this.alamat.Name = "alamat";
-            this.alamat.Size = new System.Drawing.Size(0, 25);
+            this.alamat.Size = new System.Drawing.Size(0, 20);
             this.alamat.TabIndex = 9;
             // 
             // noKTP
             // 
             this.noKTP.AutoSize = true;
-            this.noKTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noKTP.Enabled = false;
+            this.noKTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noKTP.Location = new System.Drawing.Point(239, 264);
             this.noKTP.Name = "noKTP";
-            this.noKTP.Size = new System.Drawing.Size(0, 25);
+            this.noKTP.Size = new System.Drawing.Size(0, 20);
             this.noKTP.TabIndex = 8;
             // 
             // tglDaftar
             // 
             this.tglDaftar.AutoSize = true;
-            this.tglDaftar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tglDaftar.Enabled = false;
+            this.tglDaftar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tglDaftar.Location = new System.Drawing.Point(239, 190);
             this.tglDaftar.Name = "tglDaftar";
-            this.tglDaftar.Size = new System.Drawing.Size(0, 25);
+            this.tglDaftar.Size = new System.Drawing.Size(0, 20);
             this.tglDaftar.TabIndex = 7;
             // 
             // lblnama
             // 
             this.lblnama.AutoSize = true;
-            this.lblnama.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnama.Enabled = false;
+            this.lblnama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnama.Location = new System.Drawing.Point(239, 117);
             this.lblnama.Name = "lblnama";
-            this.lblnama.Size = new System.Drawing.Size(0, 25);
+            this.lblnama.Size = new System.Drawing.Size(0, 20);
             this.lblnama.TabIndex = 6;
             // 
             // kode
             // 
             this.kode.AutoSize = true;
-            this.kode.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kode.Enabled = false;
+            this.kode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kode.Location = new System.Drawing.Point(239, 53);
             this.kode.Name = "kode";
-            this.kode.Size = new System.Drawing.Size(0, 25);
+            this.kode.Size = new System.Drawing.Size(0, 20);
             this.kode.TabIndex = 5;
             // 
             // label6
@@ -223,14 +228,17 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.button3.Location = new System.Drawing.Point(29, 5);
-            this.button3.Margin = new System.Windows.Forms.Padding(0, 6, 0, 6);
+            this.button3.BackColor = System.Drawing.Color.DarkOrange;
+            this.button3.BackgroundImage = global::Aplikasi_Transaksi_Penjualan.Properties.Resources.Backward_icon2;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(29, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(76, 45);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Back";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Size = new System.Drawing.Size(100, 35);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "   Kembali";
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Member

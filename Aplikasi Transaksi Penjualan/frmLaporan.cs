@@ -50,12 +50,13 @@ namespace Aplikasi_Transaksi_Penjualan
             DataTable dt = new DataTable();
             dataAdapter.Fill(dt);
             dataGridView1.DataSource = dt;
-
+            label1.Visible = false;
+            textBox1.Visible = false;
         }
 
         private void btnTahunan_Click(object sender, EventArgs e)
         {
-            int a = dateTimePicker1.Value.Year;
+            int a = dateTimePicker1.Value.Year, c = 0;
             timer3.Enabled = true;
             OleDbCommand SQLQuery = new OleDbCommand();
             SQLQuery.CommandText = "Select [id_user], [kode_member], tanggal, [total] from tb_transaksi WHERE '" + a + "' = DatePart('yyyy', tanggal)";
@@ -64,10 +65,19 @@ namespace Aplikasi_Transaksi_Penjualan
             DataTable dt = new DataTable();
             dataAdapter.Fill(dt);
             dataGridView1.DataSource = dt;
+            label1.Visible = true;
+            label1.Text = "Total Per Tahun : ";
+            textBox1.Visible = true;
+            foreach (DataRow row in dt.Rows)
+            {
+                c += int.Parse(row["total"].ToString());
+            }
+            textBox1.Text = "Rp. " + c.ToString() + ",- ";
         }
 
         private void btnBulanan_Click(object sender, EventArgs e)
         {
+            int c = 0;
             int a = dateTimePicker1.Value.Month;
             timer3.Enabled = true;
             OleDbCommand SQLQuery = new OleDbCommand();
@@ -77,6 +87,14 @@ namespace Aplikasi_Transaksi_Penjualan
             DataTable dt = new DataTable();
             dataAdapter.Fill(dt);
             dataGridView1.DataSource = dt;
+            label1.Visible = true;
+            label1.Text = "Total Per Bulan : ";
+            textBox1.Visible = true;
+            foreach (DataRow row in dt.Rows)
+            {
+                c += int.Parse(row["total"].ToString());
+            }
+            textBox1.Text = "Rp. " + c.ToString() + ",- ";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -108,6 +126,10 @@ namespace Aplikasi_Transaksi_Penjualan
                 btnTahunan.Location = new Point(btnTahunan.Location.X - 2, 400);
             }
             dataGridView1.Visible = true;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

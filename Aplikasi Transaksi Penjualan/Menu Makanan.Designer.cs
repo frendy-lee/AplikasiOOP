@@ -32,6 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tanggal = new System.Windows.Forms.TextBox();
+            this.harga = new System.Windows.Forms.TextBox();
+            this.nama = new System.Windows.Forms.TextBox();
+            this.kode = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -40,11 +45,6 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.kode = new System.Windows.Forms.TextBox();
-            this.nama = new System.Windows.Forms.TextBox();
-            this.harga = new System.Windows.Forms.TextBox();
-            this.tanggal = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +77,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.BackColor = System.Drawing.Color.PaleGreen;
             this.groupBox1.Controls.Add(this.tanggal);
             this.groupBox1.Controls.Add(this.harga);
             this.groupBox1.Controls.Add(this.nama);
@@ -88,12 +88,68 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(242, 74);
+            this.groupBox1.Location = new System.Drawing.Point(252, 74);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(480, 628);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detail";
+            // 
+            // tanggal
+            // 
+            this.tanggal.Enabled = false;
+            this.tanggal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tanggal.ForeColor = System.Drawing.Color.Black;
+            this.tanggal.Location = new System.Drawing.Point(169, 264);
+            this.tanggal.MaxLength = 30;
+            this.tanggal.Name = "tanggal";
+            this.tanggal.Size = new System.Drawing.Size(262, 26);
+            this.tanggal.TabIndex = 19;
+            // 
+            // harga
+            // 
+            this.harga.Enabled = false;
+            this.harga.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.harga.ForeColor = System.Drawing.Color.Black;
+            this.harga.Location = new System.Drawing.Point(169, 190);
+            this.harga.MaxLength = 30;
+            this.harga.Name = "harga";
+            this.harga.Size = new System.Drawing.Size(262, 26);
+            this.harga.TabIndex = 18;
+            // 
+            // nama
+            // 
+            this.nama.Enabled = false;
+            this.nama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nama.ForeColor = System.Drawing.Color.Black;
+            this.nama.Location = new System.Drawing.Point(169, 117);
+            this.nama.MaxLength = 30;
+            this.nama.Name = "nama";
+            this.nama.Size = new System.Drawing.Size(262, 26);
+            this.nama.TabIndex = 17;
+            // 
+            // kode
+            // 
+            this.kode.Enabled = false;
+            this.kode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kode.ForeColor = System.Drawing.Color.Black;
+            this.kode.Location = new System.Drawing.Point(169, 53);
+            this.kode.MaxLength = 30;
+            this.kode.Name = "kode";
+            this.kode.Size = new System.Drawing.Size(262, 26);
+            this.kode.TabIndex = 16;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.DarkRed;
+            this.textBox2.Location = new System.Drawing.Point(40, 369);
+            this.textBox2.MaxLength = 50;
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(391, 220);
+            this.textBox2.TabIndex = 15;
             // 
             // label6
             // 
@@ -147,10 +203,13 @@
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.PaleGreen;
+            this.listBox1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 74);
+            this.listBox1.ItemHeight = 23;
+            this.listBox1.Location = new System.Drawing.Point(17, 74);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(224, 628);
+            this.listBox1.Size = new System.Drawing.Size(224, 625);
             this.listBox1.TabIndex = 5;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedValueChanged_1);
             // 
@@ -166,63 +225,25 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkGray;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(12, 13);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button3.BackgroundImage = global::Aplikasi_Transaksi_Penjualan.Properties.Resources.Backward_icon2;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("Chiller", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(13, 6);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Back";
+            this.button3.Size = new System.Drawing.Size(100, 33);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "   Kembali";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(40, 369);
-            this.textBox2.MaxLength = 50;
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(391, 220);
-            this.textBox2.TabIndex = 15;
-            // 
-            // kode
-            // 
-            this.kode.Location = new System.Drawing.Point(169, 53);
-            this.kode.MaxLength = 30;
-            this.kode.Name = "kode";
-            this.kode.Size = new System.Drawing.Size(262, 20);
-            this.kode.TabIndex = 16;
-            // 
-            // nama
-            // 
-            this.nama.Location = new System.Drawing.Point(169, 117);
-            this.nama.MaxLength = 30;
-            this.nama.Name = "nama";
-            this.nama.Size = new System.Drawing.Size(262, 20);
-            this.nama.TabIndex = 17;
-            // 
-            // harga
-            // 
-            this.harga.Location = new System.Drawing.Point(169, 190);
-            this.harga.MaxLength = 30;
-            this.harga.Name = "harga";
-            this.harga.Size = new System.Drawing.Size(262, 20);
-            this.harga.TabIndex = 18;
-            // 
-            // tanggal
-            // 
-            this.tanggal.Location = new System.Drawing.Point(169, 264);
-            this.tanggal.MaxLength = 30;
-            this.tanggal.Name = "tanggal";
-            this.tanggal.Size = new System.Drawing.Size(262, 20);
-            this.tanggal.TabIndex = 19;
             // 
             // Menu_Makanan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(734, 711);
+            this.ClientSize = new System.Drawing.Size(750, 750);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listBox1);
@@ -255,11 +276,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox tanggal;
         private System.Windows.Forms.TextBox harga;
         private System.Windows.Forms.TextBox nama;
         private System.Windows.Forms.TextBox kode;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button3;
     }
 }
