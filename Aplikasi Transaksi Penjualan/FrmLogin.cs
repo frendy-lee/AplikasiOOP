@@ -14,7 +14,7 @@ namespace Aplikasi_Transaksi_Penjualan
     public partial class FrmLogin : Form
     {
         string nm, pas;
-        public string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=../../Dbase/TP.mdb;Persist Security Info=False;";
+        public string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C://TP.mdb;Persist Security Info=False;";
         public FrmLogin()
         {
             InitializeComponent();

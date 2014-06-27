@@ -54,7 +54,7 @@ namespace Aplikasi_Transaksi_Penjualan
         {            
             InitializeComponent();
             //initiate DB connection
-            string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=../../Dbase/TP.mdb";
+            string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C://TP.mdb";
             try
             {
                 database = new OleDbConnection(connectionString);

@@ -18,7 +18,7 @@ namespace Aplikasi_Transaksi_Penjualan
         public Member()
         {
             InitializeComponent();
-            string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=../../Dbase/TP.mdb";
+            string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C://TP.mdb";
             try
             {
 
